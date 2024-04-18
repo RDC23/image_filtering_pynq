@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver simple_add
+ OPTION supported_peripherals = (simple_add_v1_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = simple_add;
+ OPTION version = 1.0;
+END driver

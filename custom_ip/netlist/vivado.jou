@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 13 14:43:03 2024
+# Process ID: 15412
+# Current directory: C:/Users/dsb21132/Downloads/custom_ip/netlist
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/dsb21132/Downloads/custom_ip/netlist/vivado.log
+# Journal file: C:/Users/dsb21132/Downloads/custom_ip/netlist\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

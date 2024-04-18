@@ -1,0 +1,16 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_simple_add_0_0/simple_add_c_addsub_v12_0_i0/sim/simple_add_c_addsub_v12_0_i0.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/conv_pkg.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/synth_reg.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/synth_reg_w_init.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/srl17e.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/srl33e.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/synth_reg_reg.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/single_reg_w_init.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/xlclockdriver_rd.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/simple_add_entity_declarations.vhd" \
+"../../../../project_simple_add.gen/sources_1/bd/design_1/ipshared/fddb/hdl/simple_add.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

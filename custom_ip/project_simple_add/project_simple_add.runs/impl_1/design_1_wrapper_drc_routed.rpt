@@ -1,0 +1,63 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Mar 13 15:26:47 2024
+| Host         : EEE-R448-01 running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 5
++--------+----------+-------------------------------------------------------------------+------------+
+| Rule   | Severity | Description                                                       | Violations |
++--------+----------+-------------------------------------------------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining                                                  | 3          |
+| AVAL-4 | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 1          |
+| AVAL-5 | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 1          |
++--------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/simple_add_0/inst/simple_add_struct/addsub/comp0.core_instance0/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

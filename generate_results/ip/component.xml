@@ -852,26 +852,6 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i5/general_filter_c_addsub_v12_0_i5.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i6/general_filter_c_addsub_v12_0_i6.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i7/general_filter_c_addsub_v12_0_i7.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i8/general_filter_c_addsub_v12_0_i8.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i9/general_filter_c_addsub_v12_0_i9.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>general_filter_c_counter_binary_v12_0_i0/general_filter_c_counter_binary_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
@@ -1009,26 +989,6 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
       </spirit:file>
       <spirit:file>
         <spirit:name>general_filter_c_addsub_v12_0_i4/general_filter_c_addsub_v12_0_i4.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i5/general_filter_c_addsub_v12_0_i5.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i6/general_filter_c_addsub_v12_0_i6.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i7/general_filter_c_addsub_v12_0_i7.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i8/general_filter_c_addsub_v12_0_i8.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i9/general_filter_c_addsub_v12_0_i9.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -1245,8 +1205,8 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>343834185</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-04-12T12:30:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>344360260</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-04-18T14:38:14Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>

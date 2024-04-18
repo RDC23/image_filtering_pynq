@@ -293,17 +293,17 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_constant_f67708ea84 is
+entity sysgen_constant_9757282fc8 is
   port (
-    op : out std_logic_vector((8 - 1) downto 0);
+    op : out std_logic_vector((11 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_constant_f67708ea84;
-architecture behavior of sysgen_constant_f67708ea84
+end sysgen_constant_9757282fc8;
+architecture behavior of sysgen_constant_9757282fc8
 is
 begin
-  op <= "11110001";
+  op <= "11110000001";
 end behavior;
 
 library xil_defaultlib;
@@ -312,19 +312,19 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_relational_e0790a8aa9 is
+entity sysgen_relational_fe493683cb is
   port (
-    a : in std_logic_vector((8 - 1) downto 0);
-    b : in std_logic_vector((8 - 1) downto 0);
+    a : in std_logic_vector((11 - 1) downto 0);
+    b : in std_logic_vector((11 - 1) downto 0);
     op : out std_logic_vector((1 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_relational_e0790a8aa9;
-architecture behavior of sysgen_relational_e0790a8aa9
+end sysgen_relational_fe493683cb;
+architecture behavior of sysgen_relational_fe493683cb
 is
-  signal a_1_31: unsigned((8 - 1) downto 0);
-  signal b_1_34: unsigned((8 - 1) downto 0);
+  signal a_1_31: unsigned((11 - 1) downto 0);
+  signal b_1_34: unsigned((11 - 1) downto 0);
   signal result_12_3_rel: boolean;
 begin
   a_1_31 <= std_logic_vector_to_unsigned(a);
@@ -453,17 +453,17 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_constant_95bf30c11f is
+entity sysgen_constant_1382f4763c is
   port (
-    op : out std_logic_vector((8 - 1) downto 0);
+    op : out std_logic_vector((11 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_constant_95bf30c11f;
-architecture behavior of sysgen_constant_95bf30c11f
+end sysgen_constant_1382f4763c;
+architecture behavior of sysgen_constant_1382f4763c
 is
 begin
-  op <= "00000001";
+  op <= "00000000001";
 end behavior;
 
 library xil_defaultlib;
@@ -472,17 +472,17 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_constant_63ee1be23d is
+entity sysgen_constant_1263c68570 is
   port (
-    op : out std_logic_vector((8 - 1) downto 0);
+    op : out std_logic_vector((11 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_constant_63ee1be23d;
-architecture behavior of sysgen_constant_63ee1be23d
+end sysgen_constant_1263c68570;
+architecture behavior of sysgen_constant_1263c68570
 is
 begin
-  op <= "11110000";
+  op <= "11110000000";
 end behavior;
 
 library xil_defaultlib;
@@ -491,17 +491,17 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_constant_6ed1623966 is
+entity sysgen_constant_8e8184a6ab is
   port (
-    op : out std_logic_vector((8 - 1) downto 0);
+    op : out std_logic_vector((11 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_constant_6ed1623966;
-architecture behavior of sysgen_constant_6ed1623966
+end sysgen_constant_8e8184a6ab;
+architecture behavior of sysgen_constant_8e8184a6ab
 is
 begin
-  op <= "10011111";
+  op <= "10000111000";
 end behavior;
 
 library xil_defaultlib;
@@ -537,19 +537,19 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_relational_08ed7c5fb8 is
+entity sysgen_relational_eee92608d0 is
   port (
-    a : in std_logic_vector((8 - 1) downto 0);
-    b : in std_logic_vector((8 - 1) downto 0);
+    a : in std_logic_vector((11 - 1) downto 0);
+    b : in std_logic_vector((11 - 1) downto 0);
     op : out std_logic_vector((1 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_relational_08ed7c5fb8;
-architecture behavior of sysgen_relational_08ed7c5fb8
+end sysgen_relational_eee92608d0;
+architecture behavior of sysgen_relational_eee92608d0
 is
-  signal a_1_31: unsigned((8 - 1) downto 0);
-  signal b_1_34: unsigned((8 - 1) downto 0);
+  signal a_1_31: unsigned((11 - 1) downto 0);
+  signal b_1_34: unsigned((11 - 1) downto 0);
   signal result_22_3_rel: boolean;
 begin
   a_1_31 <= std_logic_vector_to_unsigned(a);
@@ -564,19 +564,19 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_relational_130e0f520f is
+entity sysgen_relational_eb538a9e2f is
   port (
-    a : in std_logic_vector((8 - 1) downto 0);
-    b : in std_logic_vector((8 - 1) downto 0);
+    a : in std_logic_vector((11 - 1) downto 0);
+    b : in std_logic_vector((11 - 1) downto 0);
     op : out std_logic_vector((1 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_relational_130e0f520f;
-architecture behavior of sysgen_relational_130e0f520f
+end sysgen_relational_eb538a9e2f;
+architecture behavior of sysgen_relational_eb538a9e2f
 is
-  signal a_1_31: unsigned((8 - 1) downto 0);
-  signal b_1_34: unsigned((8 - 1) downto 0);
+  signal a_1_31: unsigned((11 - 1) downto 0);
+  signal b_1_34: unsigned((11 - 1) downto 0);
   signal result_20_3_rel: boolean;
 begin
   a_1_31 <= std_logic_vector_to_unsigned(a);
@@ -956,71 +956,21 @@ entity general_filter_xladdsub is
 
  component general_filter_c_addsub_v12_0_i3
     port ( 
-    a: in std_logic_vector(34 - 1 downto 0);
+    a: in std_logic_vector(26 - 1 downto 0);
     clk: in std_logic:= '0';
     ce: in std_logic:= '0';
     s: out std_logic_vector(c_output_width - 1 downto 0);
-    b: in std_logic_vector(34 - 1 downto 0) 
+    b: in std_logic_vector(26 - 1 downto 0) 
  		  ); 
  end component;
 
  component general_filter_c_addsub_v12_0_i4
     port ( 
-    a: in std_logic_vector(35 - 1 downto 0);
+    a: in std_logic_vector(31 - 1 downto 0);
     clk: in std_logic:= '0';
     ce: in std_logic:= '0';
     s: out std_logic_vector(c_output_width - 1 downto 0);
-    b: in std_logic_vector(35 - 1 downto 0) 
- 		  ); 
- end component;
-
- component general_filter_c_addsub_v12_0_i5
-    port ( 
-    a: in std_logic_vector(36 - 1 downto 0);
-    clk: in std_logic:= '0';
-    ce: in std_logic:= '0';
-    s: out std_logic_vector(c_output_width - 1 downto 0);
-    b: in std_logic_vector(36 - 1 downto 0) 
- 		  ); 
- end component;
-
- component general_filter_c_addsub_v12_0_i6
-    port ( 
-    a: in std_logic_vector(37 - 1 downto 0);
-    clk: in std_logic:= '0';
-    ce: in std_logic:= '0';
-    s: out std_logic_vector(c_output_width - 1 downto 0);
-    b: in std_logic_vector(37 - 1 downto 0) 
- 		  ); 
- end component;
-
- component general_filter_c_addsub_v12_0_i7
-    port ( 
-    a: in std_logic_vector(38 - 1 downto 0);
-    clk: in std_logic:= '0';
-    ce: in std_logic:= '0';
-    s: out std_logic_vector(c_output_width - 1 downto 0);
-    b: in std_logic_vector(38 - 1 downto 0) 
- 		  ); 
- end component;
-
- component general_filter_c_addsub_v12_0_i8
-    port ( 
-    a: in std_logic_vector(39 - 1 downto 0);
-    clk: in std_logic:= '0';
-    ce: in std_logic:= '0';
-    s: out std_logic_vector(c_output_width - 1 downto 0);
-    b: in std_logic_vector(39 - 1 downto 0) 
- 		  ); 
- end component;
-
- component general_filter_c_addsub_v12_0_i9
-    port ( 
-    a: in std_logic_vector(40 - 1 downto 0);
-    clk: in std_logic:= '0';
-    ce: in std_logic:= '0';
-    s: out std_logic_vector(c_output_width - 1 downto 0);
-    b: in std_logic_vector(40 - 1 downto 0) 
+    b: in std_logic_vector(31 - 1 downto 0) 
  		  ); 
  end component;
 
@@ -1085,61 +1035,6 @@ begin
 
  comp4: if ((core_name0 = "general_filter_c_addsub_v12_0_i4")) generate 
   core_instance4:general_filter_c_addsub_v12_0_i4
-   port map ( 
-         a => full_a,
-         clk => clk,
-         ce => internal_ce,
-         s => core_s,
-         b => full_b
-  ); 
-   end generate;
-
- comp5: if ((core_name0 = "general_filter_c_addsub_v12_0_i5")) generate 
-  core_instance5:general_filter_c_addsub_v12_0_i5
-   port map ( 
-         a => full_a,
-         clk => clk,
-         ce => internal_ce,
-         s => core_s,
-         b => full_b
-  ); 
-   end generate;
-
- comp6: if ((core_name0 = "general_filter_c_addsub_v12_0_i6")) generate 
-  core_instance6:general_filter_c_addsub_v12_0_i6
-   port map ( 
-         a => full_a,
-         clk => clk,
-         ce => internal_ce,
-         s => core_s,
-         b => full_b
-  ); 
-   end generate;
-
- comp7: if ((core_name0 = "general_filter_c_addsub_v12_0_i7")) generate 
-  core_instance7:general_filter_c_addsub_v12_0_i7
-   port map ( 
-         a => full_a,
-         clk => clk,
-         ce => internal_ce,
-         s => core_s,
-         b => full_b
-  ); 
-   end generate;
-
- comp8: if ((core_name0 = "general_filter_c_addsub_v12_0_i8")) generate 
-  core_instance8:general_filter_c_addsub_v12_0_i8
-   port map ( 
-         a => full_a,
-         clk => clk,
-         ce => internal_ce,
-         s => core_s,
-         b => full_b
-  ); 
-   end generate;
-
- comp9: if ((core_name0 = "general_filter_c_addsub_v12_0_i9")) generate 
-  core_instance9:general_filter_c_addsub_v12_0_i9
    port map ( 
          a => full_a,
          clk => clk,

@@ -8,32 +8,32 @@ entity general_filter_coordinate_counter is
     valid : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
-    x_value : out std_logic_vector( 8-1 downto 0 );
-    y_value : out std_logic_vector( 8-1 downto 0 )
+    x_value : out std_logic_vector( 11-1 downto 0 );
+    y_value : out std_logic_vector( 11-1 downto 0 )
   );
 end general_filter_coordinate_counter;
 architecture structural of general_filter_coordinate_counter is 
-  signal clk_net : std_logic;
-  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
+  signal x_counter_op_net : std_logic_vector( 11-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 11-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal x_counter_op_net : std_logic_vector( 8-1 downto 0 );
   signal ce_net : std_logic;
-  signal y_counter_op_net : std_logic_vector( 8-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal y_counter_op_net : std_logic_vector( 11-1 downto 0 );
+  signal clk_net : std_logic;
 begin
   x_value <= x_counter_op_net;
   y_value <= y_counter_op_net;
   delay1_q_net <= valid;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  constant_x0 : entity xil_defaultlib.sysgen_constant_f67708ea84 
+  constant_x0 : entity xil_defaultlib.sysgen_constant_9757282fc8 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
     op => constant_op_net
   );
-  relational : entity xil_defaultlib.sysgen_relational_e0790a8aa9 
+  relational : entity xil_defaultlib.sysgen_relational_fe493683cb 
   port map (
     clk => '0',
     ce => '0',
@@ -44,14 +44,14 @@ begin
   );
   x_counter : entity xil_defaultlib.general_filter_xlcounter_limit 
   generic map (
-    cnt_15_0 => 241,
+    cnt_15_0 => 1921,
     cnt_31_16 => 0,
     cnt_47_32 => 0,
     cnt_63_48 => 0,
     core_name0 => "general_filter_c_counter_binary_v12_0_i0",
     count_limited => 1,
     op_arith => xlUnsigned,
-    op_width => 8
+    op_width => 11
   )
   port map (
     rst => "0",
@@ -63,14 +63,14 @@ begin
   );
   y_counter : entity xil_defaultlib.general_filter_xlcounter_limit 
   generic map (
-    cnt_15_0 => 160,
+    cnt_15_0 => 1081,
     cnt_31_16 => 0,
     cnt_47_32 => 0,
     cnt_63_48 => 0,
     core_name0 => "general_filter_c_counter_binary_v12_0_i0",
     count_limited => 1,
     op_arith => xlUnsigned,
-    op_width => 8
+    op_width => 11
   )
   port map (
     rst => "0",
@@ -95,18 +95,18 @@ entity general_filter_rgb_to_greyscale is
   );
 end general_filter_rgb_to_greyscale;
 architecture structural of general_filter_rgb_to_greyscale is 
-  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
   signal clk_net : std_logic;
   signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
-  signal ce_net : std_logic;
+  signal cmult2_p_net : std_logic_vector( 24-1 downto 0 );
+  signal register_q_net : std_logic_vector( 24-1 downto 0 );
+  signal blue_y_net : std_logic_vector( 8-1 downto 0 );
   signal addsub_s_net : std_logic_vector( 25-1 downto 0 );
   signal cmult_p_net : std_logic_vector( 24-1 downto 0 );
-  signal cmult2_p_net : std_logic_vector( 24-1 downto 0 );
-  signal blue_y_net : std_logic_vector( 8-1 downto 0 );
-  signal register_q_net : std_logic_vector( 24-1 downto 0 );
-  signal green_y_net : std_logic_vector( 8-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
+  signal ce_net : std_logic;
   signal cmult1_p_net : std_logic_vector( 24-1 downto 0 );
   signal red_y_net : std_logic_vector( 8-1 downto 0 );
+  signal green_y_net : std_logic_vector( 8-1 downto 0 );
 begin
   y <= addsub1_s_net;
   tdata_slice_y_net <= rgb;
@@ -327,8 +327,8 @@ library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 entity general_filter_signal_correction is
   port (
-    x_value : in std_logic_vector( 8-1 downto 0 );
-    y_value : in std_logic_vector( 8-1 downto 0 );
+    x_value : in std_logic_vector( 11-1 downto 0 );
+    y_value : in std_logic_vector( 11-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     valid : out std_logic_vector( 1-1 downto 0 );
@@ -336,28 +336,28 @@ entity general_filter_signal_correction is
   );
 end general_filter_signal_correction;
 architecture structural of general_filter_signal_correction is 
-  signal y_counter_op_net : std_logic_vector( 8-1 downto 0 );
-  signal clk_net : std_logic;
-  signal x_counter_op_net : std_logic_vector( 8-1 downto 0 );
-  signal register_q_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 8-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal y_counter_op_net : std_logic_vector( 11-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 11-1 downto 0 );
   signal ce_net : std_logic;
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal x_counter_op_net : std_logic_vector( 11-1 downto 0 );
+  signal register_q_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 11-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal constant3_op_net : std_logic_vector( 8-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 8-1 downto 0 );
-  signal logical3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 11-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant3_op_net : std_logic_vector( 11-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational4_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 11-1 downto 0 );
   signal logical2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical3_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 11-1 downto 0 );
+  signal relational4_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   valid <= register_q_net;
   last <= register1_q_net;
@@ -365,28 +365,28 @@ begin
   y_counter_op_net <= y_value;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  constant_x0 : entity xil_defaultlib.sysgen_constant_95bf30c11f 
+  constant_x0 : entity xil_defaultlib.sysgen_constant_1382f4763c 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
     op => constant_op_net
   );
-  constant1 : entity xil_defaultlib.sysgen_constant_95bf30c11f 
+  constant1 : entity xil_defaultlib.sysgen_constant_1382f4763c 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
     op => constant1_op_net
   );
-  constant2 : entity xil_defaultlib.sysgen_constant_63ee1be23d 
+  constant2 : entity xil_defaultlib.sysgen_constant_1263c68570 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
     op => constant2_op_net
   );
-  constant3 : entity xil_defaultlib.sysgen_constant_6ed1623966 
+  constant3 : entity xil_defaultlib.sysgen_constant_8e8184a6ab 
   port map (
     clk => '0',
     ce => '0',
@@ -457,8 +457,8 @@ begin
   );
   register2 : entity xil_defaultlib.general_filter_xlregister 
   generic map (
-    d_width => 8,
-    init_value => b"00000000"
+    d_width => 11,
+    init_value => b"00000000000"
   )
   port map (
     en => "1",
@@ -470,8 +470,8 @@ begin
   );
   register3 : entity xil_defaultlib.general_filter_xlregister 
   generic map (
-    d_width => 8,
-    init_value => b"00000000"
+    d_width => 11,
+    init_value => b"00000000000"
   )
   port map (
     en => "1",
@@ -481,7 +481,7 @@ begin
     ce => ce_net,
     q => register3_q_net
   );
-  relational : entity xil_defaultlib.sysgen_relational_08ed7c5fb8 
+  relational : entity xil_defaultlib.sysgen_relational_eee92608d0 
   port map (
     clk => '0',
     ce => '0',
@@ -490,7 +490,7 @@ begin
     b => constant_op_net,
     op => relational_op_net
   );
-  relational1 : entity xil_defaultlib.sysgen_relational_08ed7c5fb8 
+  relational1 : entity xil_defaultlib.sysgen_relational_eee92608d0 
   port map (
     clk => '0',
     ce => '0',
@@ -499,7 +499,7 @@ begin
     b => constant1_op_net,
     op => relational1_op_net
   );
-  relational2 : entity xil_defaultlib.sysgen_relational_130e0f520f 
+  relational2 : entity xil_defaultlib.sysgen_relational_eb538a9e2f 
   port map (
     clk => '0',
     ce => '0',
@@ -508,7 +508,7 @@ begin
     b => constant2_op_net,
     op => relational2_op_net
   );
-  relational3 : entity xil_defaultlib.sysgen_relational_130e0f520f 
+  relational3 : entity xil_defaultlib.sysgen_relational_eb538a9e2f 
   port map (
     clk => '0',
     ce => '0',
@@ -517,7 +517,7 @@ begin
     b => constant3_op_net,
     op => relational3_op_net
   );
-  relational4 : entity xil_defaultlib.sysgen_relational_e0790a8aa9 
+  relational4 : entity xil_defaultlib.sysgen_relational_fe493683cb 
   port map (
     clk => '0',
     ce => '0',
@@ -526,7 +526,7 @@ begin
     b => constant3_op_net,
     op => relational4_op_net
   );
-  relational5 : entity xil_defaultlib.sysgen_relational_e0790a8aa9 
+  relational5 : entity xil_defaultlib.sysgen_relational_fe493683cb 
   port map (
     clk => '0',
     ce => '0',
@@ -568,93 +568,48 @@ entity general_filter_subsystem is
   );
 end general_filter_subsystem;
 architecture structural of general_filter_subsystem is 
-  signal mult_p_net : std_logic_vector( 24-1 downto 0 );
-  signal delay28_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay29_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay27_q_net : std_logic_vector( 24-1 downto 0 );
-  signal mult2_p_net : std_logic_vector( 24-1 downto 0 );
+  signal addsub3_s_net : std_logic_vector( 24-1 downto 0 );
   signal mult3_p_net : std_logic_vector( 24-1 downto 0 );
-  signal mult1_p_net : std_logic_vector( 32-1 downto 0 );
-  signal mult4_p_net : std_logic_vector( 24-1 downto 0 );
-  signal mult7_p_net : std_logic_vector( 24-1 downto 0 );
-  signal mult6_p_net : std_logic_vector( 24-1 downto 0 );
+  signal addsub4_s_net : std_logic_vector( 24-1 downto 0 );
   signal mult5_p_net : std_logic_vector( 24-1 downto 0 );
-  signal mult8_p_net : std_logic_vector( 24-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay34_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay33_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay32_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay38_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay37_q_net : std_logic_vector( 24-1 downto 0 );
+  signal addsub5_s_net : std_logic_vector( 24-1 downto 0 );
+  signal mult4_p_net : std_logic_vector( 24-1 downto 0 );
+  signal mult6_p_net : std_logic_vector( 24-1 downto 0 );
+  signal addsub2_s_net : std_logic_vector( 24-1 downto 0 );
   signal constant10_op_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub6_s_net : std_logic_vector( 24-1 downto 0 );
   signal divide1_op_net : std_logic_vector( 24-1 downto 0 );
-  signal delay43_q_net : std_logic_vector( 40-1 downto 0 );
-  signal delay44_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay9_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay10_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay19_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay8_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay18_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay12_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay11_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay20_q_net : std_logic_vector( 24-1 downto 0 );
+  signal mult7_p_net : std_logic_vector( 24-1 downto 0 );
+  signal addsub7_s_net : std_logic_vector( 26-1 downto 0 );
   signal mult9_p_net : std_logic_vector( 24-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay23_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay26_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay17_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay24_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay16_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay15_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay25_q_net : std_logic_vector( 24-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register8_q_net : std_logic_vector( 8-1 downto 0 );
+  signal mult8_p_net : std_logic_vector( 24-1 downto 0 );
   signal div_net : std_logic_vector( 32-1 downto 0 );
-  signal register4_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w00_net : std_logic_vector( 32-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w10_net : std_logic_vector( 32-1 downto 0 );
-  signal w01_net : std_logic_vector( 32-1 downto 0 );
-  signal w11_net : std_logic_vector( 32-1 downto 0 );
+  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
   signal register7_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w12_net : std_logic_vector( 32-1 downto 0 );
-  signal w20_net : std_logic_vector( 32-1 downto 0 );
   signal w02_net : std_logic_vector( 32-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register4_q_net : std_logic_vector( 8-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
   signal register2_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w21_net : std_logic_vector( 32-1 downto 0 );
-  signal delay13_q_net : std_logic_vector( 33-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay22_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 8-1 downto 0 );
+  signal w01_net : std_logic_vector( 32-1 downto 0 );
+  signal w00_net : std_logic_vector( 32-1 downto 0 );
+  signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal w11_net : std_logic_vector( 32-1 downto 0 );
+  signal w12_net : std_logic_vector( 32-1 downto 0 );
+  signal register8_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal w22_net : std_logic_vector( 32-1 downto 0 );
+  signal w20_net : std_logic_vector( 32-1 downto 0 );
+  signal addsub_s_net : std_logic_vector( 24-1 downto 0 );
+  signal mult_p_net : std_logic_vector( 24-1 downto 0 );
+  signal mult1_p_net : std_logic_vector( 32-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 24-1 downto 0 );
+  signal mult2_p_net : std_logic_vector( 24-1 downto 0 );
+  signal w21_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
-  signal delay30_q_net : std_logic_vector( 36-1 downto 0 );
-  signal addsub1_s_net : std_logic_vector( 34-1 downto 0 );
-  signal addsub3_s_net : std_logic_vector( 36-1 downto 0 );
   signal ce_net : std_logic;
-  signal addsub_s_net : std_logic_vector( 33-1 downto 0 );
-  signal addsub2_s_net : std_logic_vector( 35-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 34-1 downto 0 );
-  signal delay7_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay14_q_net : std_logic_vector( 24-1 downto 0 );
-  signal addsub4_s_net : std_logic_vector( 37-1 downto 0 );
-  signal delay21_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay5_q_net : std_logic_vector( 35-1 downto 0 );
-  signal delay31_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay35_q_net : std_logic_vector( 37-1 downto 0 );
-  signal addsub7_s_net : std_logic_vector( 40-1 downto 0 );
-  signal delay41_q_net : std_logic_vector( 39-1 downto 0 );
-  signal delay42_q_net : std_logic_vector( 24-1 downto 0 );
-  signal addsub5_s_net : std_logic_vector( 38-1 downto 0 );
-  signal delay40_q_net : std_logic_vector( 24-1 downto 0 );
-  signal delay39_q_net : std_logic_vector( 38-1 downto 0 );
-  signal delay36_q_net : std_logic_vector( 24-1 downto 0 );
-  signal addsub6_s_net : std_logic_vector( 39-1 downto 0 );
 begin
   out_x0 <= convert_dout_net;
   register6_q_net <= x00;
@@ -696,235 +651,242 @@ begin
     latency => 1,
     overflow => 1,
     quantization => 1,
-    s_arith => xlSigned,
+    s_arith => xlUnsigned,
     s_bin_pt => 8,
-    s_width => 33
+    s_width => 24
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay21_q_net,
-    b => delay22_q_net,
+    a => mult_p_net,
+    b => mult1_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub_s_net
   );
   addsub1 : entity xil_defaultlib.general_filter_xladdsub 
   generic map (
-    a_arith => xlSigned,
+    a_arith => xlUnsigned,
     a_bin_pt => 8,
-    a_width => 33,
+    a_width => 24,
     b_arith => xlSigned,
     b_bin_pt => 8,
     b_width => 24,
     c_has_c_out => 0,
     c_latency => 1,
-    c_output_width => 34,
+    c_output_width => 26,
     core_name0 => "general_filter_c_addsub_v12_0_i3",
     extra_registers => 0,
     full_s_arith => 2,
-    full_s_width => 34,
+    full_s_width => 26,
     latency => 1,
     overflow => 1,
     quantization => 1,
-    s_arith => xlSigned,
+    s_arith => xlUnsigned,
     s_bin_pt => 8,
-    s_width => 34
+    s_width => 24
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay13_q_net,
-    b => delay14_q_net,
+    a => addsub_s_net,
+    b => mult2_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub1_s_net
   );
   addsub2 : entity xil_defaultlib.general_filter_xladdsub 
   generic map (
-    a_arith => xlSigned,
+    a_arith => xlUnsigned,
     a_bin_pt => 8,
-    a_width => 34,
+    a_width => 24,
     b_arith => xlSigned,
     b_bin_pt => 8,
     b_width => 24,
     c_has_c_out => 0,
     c_latency => 1,
-    c_output_width => 35,
-    core_name0 => "general_filter_c_addsub_v12_0_i4",
+    c_output_width => 26,
+    core_name0 => "general_filter_c_addsub_v12_0_i3",
     extra_registers => 0,
     full_s_arith => 2,
-    full_s_width => 35,
+    full_s_width => 26,
     latency => 1,
     overflow => 1,
     quantization => 1,
-    s_arith => xlSigned,
+    s_arith => xlUnsigned,
     s_bin_pt => 8,
-    s_width => 35
+    s_width => 24
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay6_q_net,
-    b => delay7_q_net,
+    a => addsub1_s_net,
+    b => mult3_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub2_s_net
   );
   addsub3 : entity xil_defaultlib.general_filter_xladdsub 
   generic map (
-    a_arith => xlSigned,
+    a_arith => xlUnsigned,
     a_bin_pt => 8,
-    a_width => 35,
+    a_width => 24,
     b_arith => xlSigned,
     b_bin_pt => 8,
     b_width => 24,
     c_has_c_out => 0,
     c_latency => 1,
-    c_output_width => 36,
-    core_name0 => "general_filter_c_addsub_v12_0_i5",
+    c_output_width => 26,
+    core_name0 => "general_filter_c_addsub_v12_0_i3",
     extra_registers => 0,
     full_s_arith => 2,
-    full_s_width => 36,
+    full_s_width => 26,
     latency => 1,
     overflow => 1,
     quantization => 1,
-    s_arith => xlSigned,
+    s_arith => xlUnsigned,
     s_bin_pt => 8,
-    s_width => 36
+    s_width => 24
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay5_q_net,
-    b => delay_q_net,
+    a => addsub2_s_net,
+    b => mult4_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub3_s_net
   );
   addsub4 : entity xil_defaultlib.general_filter_xladdsub 
   generic map (
-    a_arith => xlSigned,
+    a_arith => xlUnsigned,
     a_bin_pt => 8,
-    a_width => 36,
+    a_width => 24,
     b_arith => xlSigned,
     b_bin_pt => 8,
     b_width => 24,
     c_has_c_out => 0,
     c_latency => 1,
-    c_output_width => 37,
-    core_name0 => "general_filter_c_addsub_v12_0_i6",
+    c_output_width => 26,
+    core_name0 => "general_filter_c_addsub_v12_0_i3",
     extra_registers => 0,
     full_s_arith => 2,
-    full_s_width => 37,
+    full_s_width => 26,
     latency => 1,
     overflow => 1,
     quantization => 1,
-    s_arith => xlSigned,
+    s_arith => xlUnsigned,
     s_bin_pt => 8,
-    s_width => 37
+    s_width => 24
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay30_q_net,
-    b => delay31_q_net,
+    a => addsub3_s_net,
+    b => mult5_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub4_s_net
   );
   addsub5 : entity xil_defaultlib.general_filter_xladdsub 
   generic map (
-    a_arith => xlSigned,
+    a_arith => xlUnsigned,
     a_bin_pt => 8,
-    a_width => 37,
+    a_width => 24,
     b_arith => xlSigned,
     b_bin_pt => 8,
     b_width => 24,
     c_has_c_out => 0,
     c_latency => 1,
-    c_output_width => 38,
-    core_name0 => "general_filter_c_addsub_v12_0_i7",
+    c_output_width => 26,
+    core_name0 => "general_filter_c_addsub_v12_0_i3",
     extra_registers => 0,
     full_s_arith => 2,
-    full_s_width => 38,
+    full_s_width => 26,
     latency => 1,
     overflow => 1,
     quantization => 1,
-    s_arith => xlSigned,
-    s_bin_pt => 8,
-    s_width => 38
+    s_arith => xlUnsigned,
+    s_bin_pt => 14,
+    s_width => 24
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay35_q_net,
-    b => delay36_q_net,
+    a => addsub4_s_net,
+    b => mult6_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub5_s_net
   );
   addsub6 : entity xil_defaultlib.general_filter_xladdsub 
   generic map (
-    a_arith => xlSigned,
-    a_bin_pt => 8,
-    a_width => 38,
+    a_arith => xlUnsigned,
+    a_bin_pt => 14,
+    a_width => 24,
     b_arith => xlSigned,
     b_bin_pt => 8,
     b_width => 24,
     c_has_c_out => 0,
     c_latency => 1,
-    c_output_width => 39,
-    core_name0 => "general_filter_c_addsub_v12_0_i8",
+    c_output_width => 31,
+    core_name0 => "general_filter_c_addsub_v12_0_i4",
     extra_registers => 0,
     full_s_arith => 2,
-    full_s_width => 39,
+    full_s_width => 31,
     latency => 1,
     overflow => 1,
     quantization => 1,
-    s_arith => xlSigned,
+    s_arith => xlUnsigned,
     s_bin_pt => 8,
-    s_width => 39
+    s_width => 24
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay39_q_net,
-    b => delay40_q_net,
+    a => addsub5_s_net,
+    b => mult7_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub6_s_net
   );
   addsub7 : entity xil_defaultlib.general_filter_xladdsub 
   generic map (
-    a_arith => xlSigned,
+    a_arith => xlUnsigned,
     a_bin_pt => 8,
-    a_width => 39,
+    a_width => 24,
     b_arith => xlSigned,
     b_bin_pt => 8,
     b_width => 24,
     c_has_c_out => 0,
     c_latency => 1,
-    c_output_width => 40,
-    core_name0 => "general_filter_c_addsub_v12_0_i9",
+    c_output_width => 26,
+    core_name0 => "general_filter_c_addsub_v12_0_i3",
     extra_registers => 0,
     full_s_arith => 2,
-    full_s_width => 40,
+    full_s_width => 26,
     latency => 1,
     overflow => 1,
     quantization => 1,
     s_arith => xlSigned,
     s_bin_pt => 8,
-    s_width => 40
+    s_width => 26
   )
   port map (
     clr => '0',
     en => "1",
-    a => delay41_q_net,
-    b => delay42_q_net,
+    a => addsub6_s_net,
+    b => mult8_p_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub7_s_net
+  );
+  constant10 : entity xil_defaultlib.sysgen_constant_1a0597b20a 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    op => constant10_op_net
   );
   convert : entity xil_defaultlib.general_filter_xlconvert 
   generic map (
@@ -947,650 +909,15 @@ begin
     ce => ce_net,
     dout => convert_dout_net
   );
-  delay : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
+  divide1 : entity xil_defaultlib.xldivider_generator_f46c05290e4274fa958ba8845acfc07e 
   port map (
-    en => '1',
-    rst => '0',
-    d => delay8_q_net,
+    a_tvalid => '1',
+    b_tvalid => '1',
+    a => constant10_op_net,
+    b => div_net,
     clk => clk_net,
     ce => ce_net,
-    q => delay_q_net
-  );
-  delay1 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay9_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay1_q_net
-  );
-  delay10 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay18_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay10_q_net
-  );
-  delay11 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay19_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay11_q_net
-  );
-  delay12 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay20_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay12_q_net
-  );
-  delay13 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 33
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => addsub_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay13_q_net
-  );
-  delay14 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay23_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay14_q_net
-  );
-  delay15 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay24_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay15_q_net
-  );
-  delay16 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay25_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay16_q_net
-  );
-  delay17 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay26_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay17_q_net
-  );
-  delay18 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay27_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay18_q_net
-  );
-  delay19 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay28_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay19_q_net
-  );
-  delay2 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay10_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay2_q_net
-  );
-  delay20 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay29_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay20_q_net
-  );
-  delay21 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay21_q_net
-  );
-  delay22 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 32
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult1_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay22_q_net
-  );
-  delay23 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult2_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay23_q_net
-  );
-  delay24 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult3_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay24_q_net
-  );
-  delay25 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult4_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay25_q_net
-  );
-  delay26 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult5_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay26_q_net
-  );
-  delay27 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult6_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay27_q_net
-  );
-  delay28 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult7_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay28_q_net
-  );
-  delay29 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => mult8_p_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay29_q_net
-  );
-  delay3 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay11_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay3_q_net
-  );
-  delay30 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 36
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => addsub3_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay30_q_net
-  );
-  delay31 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay1_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay31_q_net
-  );
-  delay32 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay2_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay32_q_net
-  );
-  delay33 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay3_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay33_q_net
-  );
-  delay34 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay4_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay34_q_net
-  );
-  delay35 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 37
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => addsub4_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay35_q_net
-  );
-  delay36 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay32_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay36_q_net
-  );
-  delay37 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay33_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay37_q_net
-  );
-  delay38 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay34_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay38_q_net
-  );
-  delay39 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 38
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => addsub5_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay39_q_net
-  );
-  delay4 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay12_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay4_q_net
-  );
-  delay40 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay37_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay40_q_net
-  );
-  delay41 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 39
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => addsub6_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay41_q_net
-  );
-  delay42 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay38_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay42_q_net
-  );
-  delay5 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 35
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => addsub2_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay5_q_net
-  );
-  delay6 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 34
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => addsub1_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay6_q_net
-  );
-  delay7 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay15_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay7_q_net
-  );
-  delay8 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay16_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay8_q_net
-  );
-  delay9 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => delay17_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay9_q_net
+    op => divide1_op_net
   );
   mult : entity xil_defaultlib.general_filter_xlmult 
   generic map (
@@ -1665,53 +992,6 @@ begin
     core_clk => clk_net,
     core_ce => ce_net,
     p => mult1_p_net
-  );
-  mult9 : entity xil_defaultlib.general_filter_xlmult 
-  generic map (
-    a_arith => xlSigned,
-    a_bin_pt => 8,
-    a_width => 40,
-    b_arith => xlSigned,
-    b_bin_pt => 8,
-    b_width => 24,
-    c_a_type => 0,
-    c_a_width => 40,
-    c_b_type => 0,
-    c_b_width => 24,
-    c_baat => 40,
-    c_output_width => 64,
-    c_type => 0,
-    core_name0 => "general_filter_mult_gen_v12_0_i4",
-    extra_registers => 1,
-    multsign => 2,
-    overflow => 2,
-    p_arith => xlSigned,
-    p_bin_pt => 8,
-    p_width => 24,
-    quantization => 1
-  )
-  port map (
-    clr => '0',
-    core_clr => '1',
-    en => "1",
-    rst => "0",
-    a => delay43_q_net,
-    b => delay44_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    core_clk => clk_net,
-    core_ce => ce_net,
-    p => mult9_p_net
-  );
-  divide1 : entity xil_defaultlib.xldivider_generator_f46c05290e4274fa958ba8845acfc07e 
-  port map (
-    a_tvalid => '1',
-    b_tvalid => '1',
-    a => constant10_op_net,
-    b => div_net,
-    clk => clk_net,
-    ce => ce_net,
-    op => divide1_op_net
   );
   mult2 : entity xil_defaultlib.general_filter_xlmult 
   generic map (
@@ -1972,42 +1252,42 @@ begin
     core_ce => ce_net,
     p => mult8_p_net
   );
-  delay43 : entity xil_defaultlib.general_filter_xldelay 
+  mult9 : entity xil_defaultlib.general_filter_xlmult 
   generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 40
+    a_arith => xlSigned,
+    a_bin_pt => 8,
+    a_width => 26,
+    b_arith => xlSigned,
+    b_bin_pt => 8,
+    b_width => 24,
+    c_a_type => 0,
+    c_a_width => 26,
+    c_b_type => 0,
+    c_b_width => 24,
+    c_baat => 26,
+    c_output_width => 50,
+    c_type => 0,
+    core_name0 => "general_filter_mult_gen_v12_0_i4",
+    extra_registers => 1,
+    multsign => 2,
+    overflow => 2,
+    p_arith => xlSigned,
+    p_bin_pt => 8,
+    p_width => 24,
+    quantization => 1
   )
   port map (
-    en => '1',
-    rst => '0',
-    d => addsub7_s_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay43_q_net
-  );
-  delay44 : entity xil_defaultlib.general_filter_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 24
-  )
-  port map (
-    en => '1',
-    rst => '0',
-    d => divide1_op_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay44_q_net
-  );
-  constant10 : entity xil_defaultlib.sysgen_constant_1a0597b20a 
-  port map (
-    clk => '0',
-    ce => '0',
     clr => '0',
-    op => constant10_op_net
+    core_clr => '1',
+    en => "1",
+    rst => "0",
+    a => addsub7_s_net,
+    b => divide1_op_net,
+    clk => clk_net,
+    ce => ce_net,
+    core_clk => clk_net,
+    core_ce => ce_net,
+    p => mult9_p_net
   );
 end structural;
 -- Generated from Simulink block General_Filter/DUT/Algorithm/Sobel Edge Filter/Filter Function
@@ -2042,28 +1322,28 @@ entity general_filter_filter_function is
   );
 end general_filter_filter_function;
 architecture structural of general_filter_filter_function is 
-  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 8-1 downto 0 );
   signal register4_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
-  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
   signal register8_q_net : std_logic_vector( 8-1 downto 0 );
-  signal div_net : std_logic_vector( 32-1 downto 0 );
+  signal w01_net : std_logic_vector( 32-1 downto 0 );
   signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal w00_net : std_logic_vector( 32-1 downto 0 );
+  signal w02_net : std_logic_vector( 32-1 downto 0 );
+  signal w12_net : std_logic_vector( 32-1 downto 0 );
+  signal div_net : std_logic_vector( 32-1 downto 0 );
+  signal w20_net : std_logic_vector( 32-1 downto 0 );
+  signal w21_net : std_logic_vector( 32-1 downto 0 );
+  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
+  signal w22_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 8-1 downto 0 );
   signal w11_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
-  signal w02_net : std_logic_vector( 32-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w01_net : std_logic_vector( 32-1 downto 0 );
-  signal w21_net : std_logic_vector( 32-1 downto 0 );
-  signal w00_net : std_logic_vector( 32-1 downto 0 );
-  signal w12_net : std_logic_vector( 32-1 downto 0 );
-  signal w20_net : std_logic_vector( 32-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w22_net : std_logic_vector( 32-1 downto 0 );
-  signal register7_q_net : std_logic_vector( 8-1 downto 0 );
   signal ce_net : std_logic;
+  signal register7_q_net : std_logic_vector( 8-1 downto 0 );
 begin
   out_x0 <= convert_dout_net;
   register6_q_net <= w00_x0;
@@ -2136,19 +1416,19 @@ entity general_filter_filter_window is
   );
 end general_filter_filter_window;
 architecture structural of general_filter_filter_window is 
-  signal register4_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal register3_q_net : std_logic_vector( 8-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
   signal register7_q_net : std_logic_vector( 8-1 downto 0 );
   signal register5_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register8_q_net : std_logic_vector( 8-1 downto 0 );
-  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 8-1 downto 0 );
   signal clk_net : std_logic;
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register8_q_net : std_logic_vector( 8-1 downto 0 );
   signal ce_net : std_logic;
+  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
+  signal register4_q_net : std_logic_vector( 8-1 downto 0 );
   signal row_buffer_q_net : std_logic_vector( 8-1 downto 0 );
   signal row_buffer1_q_net : std_logic_vector( 8-1 downto 0 );
 begin
@@ -2284,7 +1564,7 @@ begin
   );
   row_buffer : entity xil_defaultlib.general_filter_xldelay 
   generic map (
-    latency => 242,
+    latency => 1922,
     reg_retiming => 0,
     reset => 0,
     width => 8
@@ -2299,7 +1579,7 @@ begin
   );
   row_buffer1 : entity xil_defaultlib.general_filter_xldelay 
   generic map (
-    latency => 242,
+    latency => 1922,
     reg_retiming => 0,
     reset => 0,
     width => 8
@@ -2338,30 +1618,30 @@ entity general_filter_sobel_edge_filter is
   );
 end general_filter_sobel_edge_filter;
 architecture structural of general_filter_sobel_edge_filter is 
-  signal w00_net : std_logic_vector( 32-1 downto 0 );
-  signal w01_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
-  signal div_net : std_logic_vector( 32-1 downto 0 );
-  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
   signal w02_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
+  signal div_net : std_logic_vector( 32-1 downto 0 );
+  signal w00_net : std_logic_vector( 32-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal w11_net : std_logic_vector( 32-1 downto 0 );
-  signal w22_net : std_logic_vector( 32-1 downto 0 );
+  signal w01_net : std_logic_vector( 32-1 downto 0 );
+  signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
   signal register5_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register4_q_net : std_logic_vector( 8-1 downto 0 );
+  signal w21_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 8-1 downto 0 );
   signal register7_q_net : std_logic_vector( 8-1 downto 0 );
   signal register2_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register9_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal w11_net : std_logic_vector( 32-1 downto 0 );
   signal w12_net : std_logic_vector( 32-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
-  signal w21_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal register4_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 8-1 downto 0 );
-  signal register8_q_net : std_logic_vector( 8-1 downto 0 );
   signal w20_net : std_logic_vector( 32-1 downto 0 );
+  signal w22_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register8_q_net : std_logic_vector( 8-1 downto 0 );
 begin
   edge <= convert_dout_net;
   delay_q_net <= valid;
@@ -2447,28 +1727,28 @@ entity general_filter_algorithm is
   );
 end general_filter_algorithm;
 architecture structural of general_filter_algorithm is 
+  signal w12_net : std_logic_vector( 32-1 downto 0 );
+  signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal w11_net : std_logic_vector( 32-1 downto 0 );
+  signal w22_net : std_logic_vector( 32-1 downto 0 );
+  signal w20_net : std_logic_vector( 32-1 downto 0 );
+  signal w21_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal y_counter_op_net : std_logic_vector( 11-1 downto 0 );
+  signal x_counter_op_net : std_logic_vector( 11-1 downto 0 );
+  signal ce_net : std_logic;
+  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal register_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
-  signal clk_net : std_logic;
-  signal div_net : std_logic_vector( 32-1 downto 0 );
-  signal w10_net : std_logic_vector( 32-1 downto 0 );
-  signal w12_net : std_logic_vector( 32-1 downto 0 );
-  signal w22_net : std_logic_vector( 32-1 downto 0 );
-  signal x_counter_op_net : std_logic_vector( 8-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal w02_net : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
-  signal y_counter_op_net : std_logic_vector( 8-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal w11_net : std_logic_vector( 32-1 downto 0 );
-  signal w20_net : std_logic_vector( 32-1 downto 0 );
-  signal w00_net : std_logic_vector( 32-1 downto 0 );
-  signal w21_net : std_logic_vector( 32-1 downto 0 );
-  signal addsub1_s_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net : std_logic_vector( 1-1 downto 0 );
   signal w01_net : std_logic_vector( 32-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
+  signal div_net : std_logic_vector( 32-1 downto 0 );
+  signal w00_net : std_logic_vector( 32-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal w02_net : std_logic_vector( 32-1 downto 0 );
 begin
   m_axis_tvalid <= register_q_net;
   m_axis_tdata <= convert_dout_net;
@@ -2580,21 +1860,21 @@ entity general_filter_master_fifo is
   );
 end general_filter_master_fifo;
 architecture structural of general_filter_master_fifo is 
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
   signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
-  signal ce_net : std_logic;
-  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal fifo_full_net : std_logic;
-  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
-  signal fifo_empty_net : std_logic;
-  signal fifo_af_net : std_logic;
-  signal clk_net : std_logic;
-  signal fifo_dout_net : std_logic_vector( 25-1 downto 0 );
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
   signal register_q_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 24-1 downto 0 );
+  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
+  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
   signal concat1_y_net : std_logic_vector( 25-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal fifo_af_net : std_logic;
+  signal fifo_empty_net : std_logic;
+  signal fifo_dout_net : std_logic_vector( 25-1 downto 0 );
+  signal fifo_full_net : std_logic;
 begin
   m_axis_tvalid <= inverter4_op_net;
   m_axis_tdata <= tdata_slice_y_net;
@@ -2700,20 +1980,20 @@ entity general_filter_slave_fifo is
   );
 end general_filter_slave_fifo;
 architecture structural of general_filter_slave_fifo is 
-  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
-  signal inverter2_op_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal fifo_empty_net : std_logic;
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
   signal fifo_dout_net : std_logic_vector( 25-1 downto 0 );
-  signal ce_net : std_logic;
-  signal clk_net : std_logic;
+  signal fifo_empty_net : std_logic;
   signal fifo_full_net : std_logic;
-  signal convert1_dout_net : std_logic_vector( 24-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 25-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter2_op_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal convert1_dout_net : std_logic_vector( 24-1 downto 0 );
+  signal ce_net : std_logic;
+  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 25-1 downto 0 );
+  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   tvalid_in <= logical_y_net;
   tdata_in <= tdata_slice_y_net;
@@ -2826,34 +2106,34 @@ entity general_filter_dut is
   );
 end general_filter_dut;
 architecture structural of general_filter_dut is 
-  signal w00_net : std_logic_vector( 32-1 downto 0 );
-  signal w10_net : std_logic_vector( 32-1 downto 0 );
-  signal w11_net : std_logic_vector( 32-1 downto 0 );
   signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal tlast_slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal w01_net : std_logic_vector( 32-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
-  signal w02_net : std_logic_vector( 32-1 downto 0 );
+  signal tlast_slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal s_axis_tdata_net : std_logic_vector( 32-1 downto 0 );
-  signal div_net : std_logic_vector( 32-1 downto 0 );
+  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
   signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal w20_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal w12_net : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal div_net : std_logic_vector( 32-1 downto 0 );
+  signal w00_net : std_logic_vector( 32-1 downto 0 );
+  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal w01_net : std_logic_vector( 32-1 downto 0 );
+  signal w02_net : std_logic_vector( 32-1 downto 0 );
   signal w22_net : std_logic_vector( 32-1 downto 0 );
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
-  signal convert1_dout_net : std_logic_vector( 24-1 downto 0 );
+  signal w11_net : std_logic_vector( 32-1 downto 0 );
+  signal w12_net : std_logic_vector( 32-1 downto 0 );
+  signal w21_net : std_logic_vector( 32-1 downto 0 );
+  signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal w20_net : std_logic_vector( 32-1 downto 0 );
   signal tdata_slice_y_net_x0 : std_logic_vector( 24-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal register_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net_x0 : std_logic_vector( 24-1 downto 0 );
-  signal w21_net : std_logic_vector( 32-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 24-1 downto 0 );
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal convert1_dout_net : std_logic_vector( 24-1 downto 0 );
 begin
   m_axis_tvalid <= inverter4_op_net;
   m_axis_tdata <= convert_dout_net;
@@ -2993,26 +2273,26 @@ entity general_filter_struct is
   );
 end general_filter_struct;
 architecture structural of general_filter_struct is 
-  signal w20_net : std_logic_vector( 32-1 downto 0 );
-  signal w21_net : std_logic_vector( 32-1 downto 0 );
-  signal w22_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
   signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal w11_net : std_logic_vector( 32-1 downto 0 );
+  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tdata_net : std_logic_vector( 32-1 downto 0 );
   signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
   signal div_net : std_logic_vector( 32-1 downto 0 );
-  signal w02_net : std_logic_vector( 32-1 downto 0 );
-  signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal w11_net : std_logic_vector( 32-1 downto 0 );
+  signal w22_net : std_logic_vector( 32-1 downto 0 );
   signal w12_net : std_logic_vector( 32-1 downto 0 );
-  signal w00_net : std_logic_vector( 32-1 downto 0 );
-  signal w01_net : std_logic_vector( 32-1 downto 0 );
+  signal w02_net : std_logic_vector( 32-1 downto 0 );
+  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tdata_net : std_logic_vector( 32-1 downto 0 );
+  signal w10_net : std_logic_vector( 32-1 downto 0 );
+  signal w21_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal w00_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
+  signal w01_net : std_logic_vector( 32-1 downto 0 );
+  signal w20_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   m_axis_tdata <= convert_dout_net;
   m_axis_tlast <= tlast_slice_y_net;
@@ -3125,20 +2405,20 @@ entity general_filter is
 end general_filter;
 architecture structural of general_filter is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "general_filter,sysgen_core_2020_2,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z020,speed=-1,package=clg400,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=1,ce_clr=0,clock_period=10,system_simulink_period=1e-08,waveform_viewer=0,axilite_interface=1,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=0.00039728,addsub=10,cmult=3,concat=2,constant=6,convert=3,counter=2,delay=49,divide=1,fifo=2,inv=4,logical=5,mult=10,register=14,relational=7,slice=7,}";
-  signal w12 : std_logic_vector( 32-1 downto 0 );
-  signal w20 : std_logic_vector( 32-1 downto 0 );
-  signal w21 : std_logic_vector( 32-1 downto 0 );
-  signal clk_1_net : std_logic;
+  attribute core_generation_info of structural : architecture is "general_filter,sysgen_core_2020_2,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z020,speed=-1,package=clg400,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=1,ce_clr=0,clock_period=10,system_simulink_period=1e-08,waveform_viewer=0,axilite_interface=1,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=0.0208525,addsub=10,cmult=3,concat=2,constant=6,convert=3,counter=2,delay=4,divide=1,fifo=2,inv=4,logical=5,mult=10,register=14,relational=7,slice=7,}";
+  signal clk_net : std_logic;
   signal div : std_logic_vector( 32-1 downto 0 );
+  signal w00 : std_logic_vector( 32-1 downto 0 );
   signal w01 : std_logic_vector( 32-1 downto 0 );
   signal w10 : std_logic_vector( 32-1 downto 0 );
-  signal w22 : std_logic_vector( 32-1 downto 0 );
-  signal ce_1_net : std_logic;
   signal w02 : std_logic_vector( 32-1 downto 0 );
+  signal w22 : std_logic_vector( 32-1 downto 0 );
+  signal clk_1_net : std_logic;
   signal w11 : std_logic_vector( 32-1 downto 0 );
-  signal w00 : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
+  signal ce_1_net : std_logic;
+  signal w21 : std_logic_vector( 32-1 downto 0 );
+  signal w12 : std_logic_vector( 32-1 downto 0 );
+  signal w20 : std_logic_vector( 32-1 downto 0 );
 begin
   general_filter_axi_lite_interface : entity xil_defaultlib.general_filter_axi_lite_interface 
   port map (

@@ -667,16 +667,16 @@
           "general_filter_1/general_filter_s_axi"
         ]
       },
-      "general_filter_1_m_axis": {
-        "interface_ports": [
-          "m_axis",
-          "general_filter_1/m_axis"
-        ]
-      },
       "s_axis_1": {
         "interface_ports": [
           "s_axis",
           "general_filter_1/s_axis"
+        ]
+      },
+      "general_filter_1_m_axis": {
+        "interface_ports": [
+          "m_axis",
+          "general_filter_1/m_axis"
         ]
       }
     },

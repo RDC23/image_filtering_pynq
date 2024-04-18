@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 18 15:45:11 2024
+# Process ID: 8864
+# Current directory: C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.runs/General_Filter_auto_us_0_synth_1
+# Command line: vivado.exe -log General_Filter_auto_us_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source General_Filter_auto_us_0.tcl
+# Log file: C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.runs/General_Filter_auto_us_0_synth_1/General_Filter_auto_us_0.vds
+# Journal file: C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.runs/General_Filter_auto_us_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source General_Filter_auto_us_0.tcl -notrace

@@ -48,7 +48,7 @@ lappend params_list CONFIG.implementation {DSP48}
 lappend params_list CONFIG.increment_value {1}
 lappend params_list CONFIG.latency {1}
 lappend params_list CONFIG.load {false}
-lappend params_list CONFIG.output_width {8}
+lappend params_list CONFIG.output_width {11}
 lappend params_list CONFIG.restrict_count {false}
 lappend params_list CONFIG.sclr {true}
 lappend params_list CONFIG.sinit {false}
@@ -242,12 +242,12 @@ set params_list [list]
 lappend params_list CONFIG.Component_Name {general_filter_c_addsub_v12_0_i3}
 lappend params_list CONFIG.AINIT_Value {0}
 lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {34}
+lappend params_list CONFIG.A_Width {26}
 lappend params_list CONFIG.Add_Mode {Add}
 lappend params_list CONFIG.B_Constant {false}
 lappend params_list CONFIG.B_Type {Signed}
 lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {34}
+lappend params_list CONFIG.B_Width {26}
 lappend params_list CONFIG.Borrow_Sense {Active_Low}
 lappend params_list CONFIG.Bypass {false}
 lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
@@ -257,7 +257,7 @@ lappend params_list CONFIG.C_In {false}
 lappend params_list CONFIG.C_Out {false}
 lappend params_list CONFIG.Implementation {DSP48}
 lappend params_list CONFIG.Latency {1}
-lappend params_list CONFIG.Out_Width {34}
+lappend params_list CONFIG.Out_Width {26}
 lappend params_list CONFIG.SCLR {false}
 lappend params_list CONFIG.SINIT {false}
 lappend params_list CONFIG.SINIT_Value {0}
@@ -276,12 +276,12 @@ set params_list [list]
 lappend params_list CONFIG.Component_Name {general_filter_c_addsub_v12_0_i4}
 lappend params_list CONFIG.AINIT_Value {0}
 lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {35}
+lappend params_list CONFIG.A_Width {31}
 lappend params_list CONFIG.Add_Mode {Add}
 lappend params_list CONFIG.B_Constant {false}
 lappend params_list CONFIG.B_Type {Signed}
 lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {35}
+lappend params_list CONFIG.B_Width {31}
 lappend params_list CONFIG.Borrow_Sense {Active_Low}
 lappend params_list CONFIG.Bypass {false}
 lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
@@ -291,7 +291,7 @@ lappend params_list CONFIG.C_In {false}
 lappend params_list CONFIG.C_Out {false}
 lappend params_list CONFIG.Implementation {DSP48}
 lappend params_list CONFIG.Latency {1}
-lappend params_list CONFIG.Out_Width {35}
+lappend params_list CONFIG.Out_Width {31}
 lappend params_list CONFIG.SCLR {false}
 lappend params_list CONFIG.SINIT {false}
 lappend params_list CONFIG.SINIT_Value {0}
@@ -304,172 +304,34 @@ set_property -dict $params_list [get_ips general_filter_c_addsub_v12_0_i4]
 
 
 set existingipslist [get_ips]
-if {[lsearch $existingipslist general_filter_c_addsub_v12_0_i5] < 0} {
-create_ip -name c_addsub -version 12.0 -vendor xilinx.com -library ip -module_name general_filter_c_addsub_v12_0_i5
+if {[lsearch $existingipslist general_filter_div_gen_v5_1_i0] < 0} {
+create_ip -name div_gen -version 5.1 -vendor xilinx.com -library ip -module_name general_filter_div_gen_v5_1_i0
 set params_list [list]
-lappend params_list CONFIG.Component_Name {general_filter_c_addsub_v12_0_i5}
-lappend params_list CONFIG.AINIT_Value {0}
-lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {36}
-lappend params_list CONFIG.Add_Mode {Add}
-lappend params_list CONFIG.B_Constant {false}
-lappend params_list CONFIG.B_Type {Signed}
-lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {36}
-lappend params_list CONFIG.Borrow_Sense {Active_Low}
-lappend params_list CONFIG.Bypass {false}
-lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
-lappend params_list CONFIG.Bypass_Sense {Active_Low}
-lappend params_list CONFIG.CE {true}
-lappend params_list CONFIG.C_In {false}
-lappend params_list CONFIG.C_Out {false}
-lappend params_list CONFIG.Implementation {DSP48}
-lappend params_list CONFIG.Latency {1}
-lappend params_list CONFIG.Out_Width {36}
-lappend params_list CONFIG.SCLR {false}
-lappend params_list CONFIG.SINIT {false}
-lappend params_list CONFIG.SINIT_Value {0}
-lappend params_list CONFIG.SSET {false}
-lappend params_list CONFIG.Sync_CE_Priority {Sync_Overrides_CE}
-lappend params_list CONFIG.Sync_Ctrl_Priority {Reset_Overrides_Set}
+lappend params_list CONFIG.Component_Name {general_filter_div_gen_v5_1_i0}
+lappend params_list CONFIG.ACLKEN {false}
+lappend params_list CONFIG.ARESETN {false}
+lappend params_list CONFIG.FlowControl {NonBlocking}
+lappend params_list CONFIG.OptimizeGoal {Performance}
+lappend params_list CONFIG.OutTLASTBehv {Null}
+lappend params_list CONFIG.OutTready {false}
+lappend params_list CONFIG.algorithm_type {Radix2}
+lappend params_list CONFIG.clocks_per_division {1}
+lappend params_list CONFIG.divide_by_zero_detect {false}
+lappend params_list CONFIG.dividend_and_quotient_width {16}
+lappend params_list CONFIG.dividend_has_tlast {false}
+lappend params_list CONFIG.dividend_has_tuser {false}
+lappend params_list CONFIG.dividend_tuser_width {1}
+lappend params_list CONFIG.divisor_has_tlast {false}
+lappend params_list CONFIG.divisor_has_tuser {false}
+lappend params_list CONFIG.divisor_tuser_width {1}
+lappend params_list CONFIG.divisor_width {32}
+lappend params_list CONFIG.fractional_width {8}
+lappend params_list CONFIG.latency {28}
+lappend params_list CONFIG.latency_configuration {Automatic}
+lappend params_list CONFIG.operand_sign {Signed}
+lappend params_list CONFIG.remainder_type {Fractional}
 
-set_property -dict $params_list [get_ips general_filter_c_addsub_v12_0_i5]
-}
-
-
-set existingipslist [get_ips]
-if {[lsearch $existingipslist general_filter_c_addsub_v12_0_i6] < 0} {
-create_ip -name c_addsub -version 12.0 -vendor xilinx.com -library ip -module_name general_filter_c_addsub_v12_0_i6
-set params_list [list]
-lappend params_list CONFIG.Component_Name {general_filter_c_addsub_v12_0_i6}
-lappend params_list CONFIG.AINIT_Value {0}
-lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {37}
-lappend params_list CONFIG.Add_Mode {Add}
-lappend params_list CONFIG.B_Constant {false}
-lappend params_list CONFIG.B_Type {Signed}
-lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {37}
-lappend params_list CONFIG.Borrow_Sense {Active_Low}
-lappend params_list CONFIG.Bypass {false}
-lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
-lappend params_list CONFIG.Bypass_Sense {Active_Low}
-lappend params_list CONFIG.CE {true}
-lappend params_list CONFIG.C_In {false}
-lappend params_list CONFIG.C_Out {false}
-lappend params_list CONFIG.Implementation {DSP48}
-lappend params_list CONFIG.Latency {1}
-lappend params_list CONFIG.Out_Width {37}
-lappend params_list CONFIG.SCLR {false}
-lappend params_list CONFIG.SINIT {false}
-lappend params_list CONFIG.SINIT_Value {0}
-lappend params_list CONFIG.SSET {false}
-lappend params_list CONFIG.Sync_CE_Priority {Sync_Overrides_CE}
-lappend params_list CONFIG.Sync_Ctrl_Priority {Reset_Overrides_Set}
-
-set_property -dict $params_list [get_ips general_filter_c_addsub_v12_0_i6]
-}
-
-
-set existingipslist [get_ips]
-if {[lsearch $existingipslist general_filter_c_addsub_v12_0_i7] < 0} {
-create_ip -name c_addsub -version 12.0 -vendor xilinx.com -library ip -module_name general_filter_c_addsub_v12_0_i7
-set params_list [list]
-lappend params_list CONFIG.Component_Name {general_filter_c_addsub_v12_0_i7}
-lappend params_list CONFIG.AINIT_Value {0}
-lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {38}
-lappend params_list CONFIG.Add_Mode {Add}
-lappend params_list CONFIG.B_Constant {false}
-lappend params_list CONFIG.B_Type {Signed}
-lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {38}
-lappend params_list CONFIG.Borrow_Sense {Active_Low}
-lappend params_list CONFIG.Bypass {false}
-lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
-lappend params_list CONFIG.Bypass_Sense {Active_Low}
-lappend params_list CONFIG.CE {true}
-lappend params_list CONFIG.C_In {false}
-lappend params_list CONFIG.C_Out {false}
-lappend params_list CONFIG.Implementation {DSP48}
-lappend params_list CONFIG.Latency {1}
-lappend params_list CONFIG.Out_Width {38}
-lappend params_list CONFIG.SCLR {false}
-lappend params_list CONFIG.SINIT {false}
-lappend params_list CONFIG.SINIT_Value {0}
-lappend params_list CONFIG.SSET {false}
-lappend params_list CONFIG.Sync_CE_Priority {Sync_Overrides_CE}
-lappend params_list CONFIG.Sync_Ctrl_Priority {Reset_Overrides_Set}
-
-set_property -dict $params_list [get_ips general_filter_c_addsub_v12_0_i7]
-}
-
-
-set existingipslist [get_ips]
-if {[lsearch $existingipslist general_filter_c_addsub_v12_0_i8] < 0} {
-create_ip -name c_addsub -version 12.0 -vendor xilinx.com -library ip -module_name general_filter_c_addsub_v12_0_i8
-set params_list [list]
-lappend params_list CONFIG.Component_Name {general_filter_c_addsub_v12_0_i8}
-lappend params_list CONFIG.AINIT_Value {0}
-lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {39}
-lappend params_list CONFIG.Add_Mode {Add}
-lappend params_list CONFIG.B_Constant {false}
-lappend params_list CONFIG.B_Type {Signed}
-lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {39}
-lappend params_list CONFIG.Borrow_Sense {Active_Low}
-lappend params_list CONFIG.Bypass {false}
-lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
-lappend params_list CONFIG.Bypass_Sense {Active_Low}
-lappend params_list CONFIG.CE {true}
-lappend params_list CONFIG.C_In {false}
-lappend params_list CONFIG.C_Out {false}
-lappend params_list CONFIG.Implementation {DSP48}
-lappend params_list CONFIG.Latency {1}
-lappend params_list CONFIG.Out_Width {39}
-lappend params_list CONFIG.SCLR {false}
-lappend params_list CONFIG.SINIT {false}
-lappend params_list CONFIG.SINIT_Value {0}
-lappend params_list CONFIG.SSET {false}
-lappend params_list CONFIG.Sync_CE_Priority {Sync_Overrides_CE}
-lappend params_list CONFIG.Sync_Ctrl_Priority {Reset_Overrides_Set}
-
-set_property -dict $params_list [get_ips general_filter_c_addsub_v12_0_i8]
-}
-
-
-set existingipslist [get_ips]
-if {[lsearch $existingipslist general_filter_c_addsub_v12_0_i9] < 0} {
-create_ip -name c_addsub -version 12.0 -vendor xilinx.com -library ip -module_name general_filter_c_addsub_v12_0_i9
-set params_list [list]
-lappend params_list CONFIG.Component_Name {general_filter_c_addsub_v12_0_i9}
-lappend params_list CONFIG.AINIT_Value {0}
-lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {40}
-lappend params_list CONFIG.Add_Mode {Add}
-lappend params_list CONFIG.B_Constant {false}
-lappend params_list CONFIG.B_Type {Signed}
-lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {40}
-lappend params_list CONFIG.Borrow_Sense {Active_Low}
-lappend params_list CONFIG.Bypass {false}
-lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
-lappend params_list CONFIG.Bypass_Sense {Active_Low}
-lappend params_list CONFIG.CE {true}
-lappend params_list CONFIG.C_In {false}
-lappend params_list CONFIG.C_Out {false}
-lappend params_list CONFIG.Implementation {DSP48}
-lappend params_list CONFIG.Latency {1}
-lappend params_list CONFIG.Out_Width {40}
-lappend params_list CONFIG.SCLR {false}
-lappend params_list CONFIG.SINIT {false}
-lappend params_list CONFIG.SINIT_Value {0}
-lappend params_list CONFIG.SSET {false}
-lappend params_list CONFIG.Sync_CE_Priority {Sync_Overrides_CE}
-lappend params_list CONFIG.Sync_Ctrl_Priority {Reset_Overrides_Set}
-
-set_property -dict $params_list [get_ips general_filter_c_addsub_v12_0_i9]
+set_property -dict $params_list [get_ips general_filter_div_gen_v5_1_i0]
 }
 
 
@@ -503,10 +365,10 @@ lappend params_list CONFIG.Component_Name {general_filter_mult_gen_v12_0_i4}
 lappend params_list CONFIG.clockenable {false}
 lappend params_list CONFIG.multiplier_construction {Use_Mults}
 lappend params_list CONFIG.optgoal {Speed}
-lappend params_list CONFIG.outputwidthhigh {63}
+lappend params_list CONFIG.outputwidthhigh {49}
 lappend params_list CONFIG.pipestages {0}
 lappend params_list CONFIG.portatype {Signed}
-lappend params_list CONFIG.portawidth {40}
+lappend params_list CONFIG.portawidth {26}
 lappend params_list CONFIG.portbtype {Signed}
 lappend params_list CONFIG.portbwidth {24}
 lappend params_list CONFIG.sclrcepriority {CE_Overrides_SCLR}
@@ -514,38 +376,6 @@ lappend params_list CONFIG.syncclear {false}
 lappend params_list CONFIG.use_custom_output_width {true}
 
 set_property -dict $params_list [get_ips general_filter_mult_gen_v12_0_i4]
-}
-
-
-set existingipslist [get_ips]
-if {[lsearch $existingipslist general_filter_div_gen_v5_1_i0] < 0} {
-create_ip -name div_gen -version 5.1 -vendor xilinx.com -library ip -module_name general_filter_div_gen_v5_1_i0
-set params_list [list]
-lappend params_list CONFIG.Component_Name {general_filter_div_gen_v5_1_i0}
-lappend params_list CONFIG.ACLKEN {false}
-lappend params_list CONFIG.ARESETN {false}
-lappend params_list CONFIG.FlowControl {NonBlocking}
-lappend params_list CONFIG.OptimizeGoal {Performance}
-lappend params_list CONFIG.OutTLASTBehv {Null}
-lappend params_list CONFIG.OutTready {false}
-lappend params_list CONFIG.algorithm_type {Radix2}
-lappend params_list CONFIG.clocks_per_division {1}
-lappend params_list CONFIG.divide_by_zero_detect {false}
-lappend params_list CONFIG.dividend_and_quotient_width {16}
-lappend params_list CONFIG.dividend_has_tlast {false}
-lappend params_list CONFIG.dividend_has_tuser {false}
-lappend params_list CONFIG.dividend_tuser_width {1}
-lappend params_list CONFIG.divisor_has_tlast {false}
-lappend params_list CONFIG.divisor_has_tuser {false}
-lappend params_list CONFIG.divisor_tuser_width {1}
-lappend params_list CONFIG.divisor_width {32}
-lappend params_list CONFIG.fractional_width {8}
-lappend params_list CONFIG.latency {28}
-lappend params_list CONFIG.latency_configuration {Automatic}
-lappend params_list CONFIG.operand_sign {Signed}
-lappend params_list CONFIG.remainder_type {Fractional}
-
-set_property -dict $params_list [get_ips general_filter_div_gen_v5_1_i0]
 }
 
 

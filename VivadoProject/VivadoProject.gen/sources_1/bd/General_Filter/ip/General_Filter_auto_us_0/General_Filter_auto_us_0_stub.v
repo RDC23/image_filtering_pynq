@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 // Date        : Thu Apr 18 15:46:31 2024
 // Host        : EEE-R448-31 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_0/General_Filter_auto_us_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top General_Filter_auto_us_0 -prefix
+//               General_Filter_auto_us_0_ General_Filter_auto_us_0_stub.v
 // Design      : General_Filter_auto_us_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

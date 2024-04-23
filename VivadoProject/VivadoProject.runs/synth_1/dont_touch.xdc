@@ -4,32 +4,35 @@
 # Block Designs: bd/General_Filter/General_Filter.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter || ORIG_REF_NAME==General_Filter} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_processing_system7_0_0/General_Filter_processing_system7_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_processing_system7_0_0 || ORIG_REF_NAME==General_Filter_processing_system7_0_0} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_processing_system7_0_1/General_Filter_processing_system7_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_processing_system7_0_1 || ORIG_REF_NAME==General_Filter_processing_system7_0_1} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_general_filter_0_0/General_Filter_general_filter_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_general_filter_0_0 || ORIG_REF_NAME==General_Filter_general_filter_0_0} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_general_filter_0_1/General_Filter_general_filter_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_general_filter_0_1 || ORIG_REF_NAME==General_Filter_general_filter_0_1} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_axi_dma_0/General_Filter_axi_dma_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_axi_dma_0 || ORIG_REF_NAME==General_Filter_axi_dma_0} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_axi_dma_2/General_Filter_axi_dma_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_axi_dma_2 || ORIG_REF_NAME==General_Filter_axi_dma_2} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_xbar_0/General_Filter_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_xbar_0 || ORIG_REF_NAME==General_Filter_xbar_0} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_xbar_4/General_Filter_xbar_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_xbar_4 || ORIG_REF_NAME==General_Filter_xbar_4} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_axi_mem_intercon_0/General_Filter_axi_mem_intercon_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_axi_mem_intercon_0 || ORIG_REF_NAME==General_Filter_axi_mem_intercon_0} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_axi_mem_intercon_2/General_Filter_axi_mem_intercon_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_axi_mem_intercon_2 || ORIG_REF_NAME==General_Filter_axi_mem_intercon_2} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_0/General_Filter_rst_ps7_0_100M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_rst_ps7_0_100M_0 || ORIG_REF_NAME==General_Filter_rst_ps7_0_100M_0} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_2/General_Filter_rst_ps7_0_100M_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_rst_ps7_0_100M_2 || ORIG_REF_NAME==General_Filter_rst_ps7_0_100M_2} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_xbar_1/General_Filter_xbar_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_xbar_1 || ORIG_REF_NAME==General_Filter_xbar_1} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_xbar_5/General_Filter_xbar_5.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_xbar_5 || ORIG_REF_NAME==General_Filter_xbar_5} -quiet] -quiet
 
-# IP: bd/General_Filter/ip/General_Filter_ps7_0_axi_periph_0/General_Filter_ps7_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_ps7_0_axi_periph_0 || ORIG_REF_NAME==General_Filter_ps7_0_axi_periph_0} -quiet] -quiet
+# IP: bd/General_Filter/ip/General_Filter_ps7_0_axi_periph_3/General_Filter_ps7_0_axi_periph_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_ps7_0_axi_periph_3 || ORIG_REF_NAME==General_Filter_ps7_0_axi_periph_3} -quiet] -quiet
 
 # IP: bd/General_Filter/ip/General_Filter_auto_us_0/General_Filter_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_auto_us_0 || ORIG_REF_NAME==General_Filter_auto_us_0} -quiet] -quiet
+
+# IP: bd/General_Filter/ip/General_Filter_auto_us_1/General_Filter_auto_us_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_auto_us_1 || ORIG_REF_NAME==General_Filter_auto_us_1} -quiet] -quiet
 
 # IP: bd/General_Filter/ip/General_Filter_auto_pc_0/General_Filter_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==General_Filter_auto_pc_0 || ORIG_REF_NAME==General_Filter_auto_pc_0} -quiet] -quiet

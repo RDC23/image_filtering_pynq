@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Apr 18 15:55:06 2024
-| Host         : EEE-R448-31 running 64-bit major release  (build 9200)
+| Date         : Tue Apr 23 15:29:45 2024
+| Host         : EEE-R448-13 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file General_Filter_wrapper_utilization_synth.rpt -pb General_Filter_wrapper_utilization_synth.pb
 | Design       : General_Filter_wrapper
 | Device       : 7z020clg400-1
@@ -175,12 +175,13 @@ Table of Contents
 +---------------------------------------+------+
 |                Ref Name               | Used |
 +---------------------------------------+------+
-| General_Filter_xbar_1                 |    1 |
-| General_Filter_xbar_0                 |    1 |
-| General_Filter_rst_ps7_0_100M_0       |    1 |
-| General_Filter_processing_system7_0_0 |    1 |
-| General_Filter_general_filter_0_0     |    1 |
-| General_Filter_axi_dma_0              |    1 |
+| General_Filter_xbar_5                 |    1 |
+| General_Filter_xbar_4                 |    1 |
+| General_Filter_rst_ps7_0_100M_2       |    1 |
+| General_Filter_processing_system7_0_1 |    1 |
+| General_Filter_general_filter_0_1     |    1 |
+| General_Filter_axi_dma_2              |    1 |
+| General_Filter_auto_us_1              |    1 |
 | General_Filter_auto_us_0              |    1 |
 | General_Filter_auto_pc_1              |    1 |
 | General_Filter_auto_pc_0              |    1 |

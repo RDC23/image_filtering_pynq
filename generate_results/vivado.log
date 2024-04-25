@@ -2,153 +2,131 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Apr 23 15:21:27 2024
-# Process ID: 5736
-# Current directory: C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results
+# Start of session at: Thu Apr 25 18:13:35 2024
+# Process ID: 20216
+# Current directory: C:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results
 # Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
-# Log file: C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/vivado.log
-# Journal file: C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results\vivado.jou
+# Log file: C:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/vivado.log
+# Journal file: C:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results\vivado.jou
 #-----------------------------------------------------------
 source ProjectGeneration.tcl -notrace
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog'
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1088.523 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1109.078 ; gain = 0.000
 WARNING: [Coretcl 2-176] No IPs found
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_counter_binary_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_counter_binary_v12_0_i0' to 'general_filter_c_counter_binary_v12_0_i0' is not allowed and is ignored.
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i0' to 'general_filter_c_addsub_v12_0_i0' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i0'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i1' to 'general_filter_c_addsub_v12_0_i1' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i1'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i1'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i1'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_mult_gen_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_mult_gen_v12_0_i0' to 'general_filter_mult_gen_v12_0_i0' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBType' from 'Signed' to 'Unsigned' has been ignored for IP 'general_filter_mult_gen_v12_0_i0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBWidth' from '18' to '16' has been ignored for IP 'general_filter_mult_gen_v12_0_i0'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_mult_gen_v12_0_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_mult_gen_v12_0_i1' to 'general_filter_mult_gen_v12_0_i1' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBType' from 'Signed' to 'Unsigned' has been ignored for IP 'general_filter_mult_gen_v12_0_i1'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBWidth' from '18' to '16' has been ignored for IP 'general_filter_mult_gen_v12_0_i1'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_mult_gen_v12_0_i2' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_mult_gen_v12_0_i2' to 'general_filter_mult_gen_v12_0_i2' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBType' from 'Signed' to 'Unsigned' has been ignored for IP 'general_filter_mult_gen_v12_0_i2'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBWidth' from '18' to '16' has been ignored for IP 'general_filter_mult_gen_v12_0_i2'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i2' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i2' to 'general_filter_c_addsub_v12_0_i2' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i2'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i2'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i2'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i3' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i3' to 'general_filter_c_addsub_v12_0_i3' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i3'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i3'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i3'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i4' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i4' to 'general_filter_c_addsub_v12_0_i4' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '000000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i4'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i4'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i4'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i5' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i5' to 'general_filter_c_addsub_v12_0_i5' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i5'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i5'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i5'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i6' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i6' to 'general_filter_c_addsub_v12_0_i6' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i6'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i6'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i6'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i7' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i7' to 'general_filter_c_addsub_v12_0_i7' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '000000000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i7'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i7'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i7'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i8' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i8' to 'general_filter_c_addsub_v12_0_i8' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i8'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i8'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i8'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_c_addsub_v12_0_i9' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_c_addsub_v12_0_i9' to 'general_filter_c_addsub_v12_0_i9' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000000000000000000' to '0' has been ignored for IP 'general_filter_c_addsub_v12_0_i9'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'general_filter_c_addsub_v12_0_i9'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'general_filter_c_addsub_v12_0_i9'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_div_gen_v5_1_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_div_gen_v5_1_i0' to 'general_filter_div_gen_v5_1_i0' is not allowed and is ignored.
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_mult_gen_v12_0_i3' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_mult_gen_v12_0_i3' to 'general_filter_mult_gen_v12_0_i3' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'SclrCePriority' from 'SCLR_Overrides_CE' to 'CE_Overrides_SCLR' has been ignored for IP 'general_filter_mult_gen_v12_0_i3'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_mult_gen_v12_0_i4' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_mult_gen_v12_0_i4' to 'general_filter_mult_gen_v12_0_i4' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'SclrCePriority' from 'SCLR_Overrides_CE' to 'CE_Overrides_SCLR' has been ignored for IP 'general_filter_mult_gen_v12_0_i4'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_fifo_generator_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_fifo_generator_i0' to 'general_filter_fifo_generator_i0' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Extra_Logic' from 'true' to 'false' has been ignored for IP 'general_filter_fifo_generator_i0'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Dout_Reset' from 'false' to 'true' has been ignored for IP 'general_filter_fifo_generator_i0'
-WARNING: [IP_Flow 19-4832] The IP name 'general_filter_fifo_generator_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'general_filter_fifo_generator_i1' to 'general_filter_fifo_generator_i1' is not allowed and is ignored.
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Extra_Logic' from 'true' to 'false' has been ignored for IP 'general_filter_fifo_generator_i1'
-WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Dout_Reset' from 'false' to 'true' has been ignored for IP 'general_filter_fifo_generator_i1'
+WARNING: [IP_Flow 19-4832] The IP name 'filter_c_counter_binary_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_counter_binary_v12_0_i0' to 'filter_c_counter_binary_v12_0_i0' is not allowed and is ignored.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i0' to 'filter_c_addsub_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i0'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i1' to 'filter_c_addsub_v12_0_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i1'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_mult_gen_v12_0_i0' to 'filter_mult_gen_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBType' from 'Signed' to 'Unsigned' has been ignored for IP 'filter_mult_gen_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBWidth' from '18' to '16' has been ignored for IP 'filter_mult_gen_v12_0_i0'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_mult_gen_v12_0_i1' to 'filter_mult_gen_v12_0_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBType' from 'Signed' to 'Unsigned' has been ignored for IP 'filter_mult_gen_v12_0_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBWidth' from '18' to '16' has been ignored for IP 'filter_mult_gen_v12_0_i1'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_mult_gen_v12_0_i2' to 'filter_mult_gen_v12_0_i2' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBType' from 'Signed' to 'Unsigned' has been ignored for IP 'filter_mult_gen_v12_0_i2'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBWidth' from '18' to '16' has been ignored for IP 'filter_mult_gen_v12_0_i2'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i2' to 'filter_c_addsub_v12_0_i2' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i2'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i2'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i2'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i3' to 'filter_c_addsub_v12_0_i3' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i3'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i3'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i3'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i4' to 'filter_c_addsub_v12_0_i4' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i4'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i4'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i4'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i5' to 'filter_c_addsub_v12_0_i5' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i5'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i5'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i5'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i6' to 'filter_c_addsub_v12_0_i6' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '000000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i6'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i6'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i6'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i7' to 'filter_c_addsub_v12_0_i7' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i7'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i7'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i7'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i8' to 'filter_c_addsub_v12_0_i8' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i8'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_c_addsub_v12_0_i9' to 'filter_c_addsub_v12_0_i9' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '000000000000000000000000' to '0' has been ignored for IP 'filter_c_addsub_v12_0_i9'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'filter_c_addsub_v12_0_i9'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'filter_c_addsub_v12_0_i9'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_div_gen_v5_1_i0' to 'filter_div_gen_v5_1_i0' is not allowed and is ignored.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_mult_gen_v12_0_i3' to 'filter_mult_gen_v12_0_i3' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'SclrCePriority' from 'SCLR_Overrides_CE' to 'CE_Overrides_SCLR' has been ignored for IP 'filter_mult_gen_v12_0_i3'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_mult_gen_v12_0_i4' to 'filter_mult_gen_v12_0_i4' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'SclrCePriority' from 'SCLR_Overrides_CE' to 'CE_Overrides_SCLR' has been ignored for IP 'filter_mult_gen_v12_0_i4'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_fifo_generator_i0' to 'filter_fifo_generator_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Extra_Logic' from 'true' to 'false' has been ignored for IP 'filter_fifo_generator_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Dout_Reset' from 'false' to 'true' has been ignored for IP 'filter_fifo_generator_i0'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'filter_fifo_generator_i1' to 'filter_fifo_generator_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Extra_Logic' from 'true' to 'false' has been ignored for IP 'filter_fifo_generator_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Use_Dout_Reset' from 'false' to 'true' has been ignored for IP 'filter_fifo_generator_i1'
 IP Repository Located at : C:/Xilinx/Vivado/2020.2/data/ip
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog'
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i0/general_filter_c_addsub_v12_0_i0.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i1/general_filter_c_addsub_v12_0_i1.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i2/general_filter_c_addsub_v12_0_i2.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i3/general_filter_c_addsub_v12_0_i3.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i4/general_filter_c_addsub_v12_0_i4.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i5/general_filter_c_addsub_v12_0_i5.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i6/general_filter_c_addsub_v12_0_i6.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i7/general_filter_c_addsub_v12_0_i7.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i8/general_filter_c_addsub_v12_0_i8.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_addsub_v12_0_i9/general_filter_c_addsub_v12_0_i9.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_c_counter_binary_v12_0_i0/general_filter_c_counter_binary_v12_0_i0.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_div_gen_v5_1_i0/general_filter_div_gen_v5_1_i0.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_fifo_generator_i0/general_filter_fifo_generator_i0.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_fifo_generator_i1/general_filter_fifo_generator_i1.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_mult_gen_v12_0_i0/general_filter_mult_gen_v12_0_i0.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_mult_gen_v12_0_i1/general_filter_mult_gen_v12_0_i1.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_mult_gen_v12_0_i2/general_filter_mult_gen_v12_0_i2.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_mult_gen_v12_0_i3/general_filter_mult_gen_v12_0_i3.xci
-Adding File c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog/general_filter.srcs/sources_1/ip/general_filter_mult_gen_v12_0_i4/general_filter_mult_gen_v12_0_i4.xci
-Adding File C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/sysgen/general_filter.xdc
-Adding File C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/sysgen/general_filter.htm
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i0/filter_c_addsub_v12_0_i0.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i1/filter_c_addsub_v12_0_i1.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i2/filter_c_addsub_v12_0_i2.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i3/filter_c_addsub_v12_0_i3.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i4/filter_c_addsub_v12_0_i4.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i5/filter_c_addsub_v12_0_i5.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i6/filter_c_addsub_v12_0_i6.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i7/filter_c_addsub_v12_0_i7.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i8/filter_c_addsub_v12_0_i8.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_addsub_v12_0_i9/filter_c_addsub_v12_0_i9.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_c_counter_binary_v12_0_i0/filter_c_counter_binary_v12_0_i0.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_div_gen_v5_1_i0/filter_div_gen_v5_1_i0.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_fifo_generator_i0/filter_fifo_generator_i0.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_fifo_generator_i1/filter_fifo_generator_i1.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_mult_gen_v12_0_i0/filter_mult_gen_v12_0_i0.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_mult_gen_v12_0_i1/filter_mult_gen_v12_0_i1.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_mult_gen_v12_0_i2/filter_mult_gen_v12_0_i2.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_mult_gen_v12_0_i3/filter_mult_gen_v12_0_i3.xci
+Adding File c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog/filter.srcs/sources_1/ip/filter_mult_gen_v12_0_i4/filter_mult_gen_v12_0_i4.xci
+Adding File C:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/sysgen/filter.xdc
+Adding File C:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/sysgen/filter.htm
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from TCL Argument).
 INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from TCL Argument).
-INFO: [IP_Flow 19-5107] Inferred bus interface 'general_filter_s_axi' of definition 'xilinx.com:interface:aximm:1.0' (from TCL Argument).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'filter_s_axi' of definition 'xilinx.com:interface:aximm:1.0' (from TCL Argument).
 INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from TCL Argument).
-INFO: [IP_Flow 19-5107] Inferred bus interface 'general_filter_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from TCL Argument).
-INFO: [IP_Flow 19-4728] Bus Interface 'general_filter_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'filter_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from TCL Argument).
+INFO: [IP_Flow 19-4728] Bus Interface 'filter_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
 INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
-CRITICAL WARNING: [IP_Flow 19-625] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': One or more verilogSource files found added to the pure language VHDL file group: hdl/general_filter_axi_lite_interface_verilog.v,...
-CRITICAL WARNING: [IP_Flow 19-625] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': One or more verilogSource files found added to the pure language VHDL file group: hdl/general_filter_axi_lite_interface_verilog.v,...
+CRITICAL WARNING: [IP_Flow 19-625] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': One or more verilogSource files found added to the pure language VHDL file group: hdl/filter_axi_lite_interface_verilog.v,...
+CRITICAL WARNING: [IP_Flow 19-625] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': One or more verilogSource files found added to the pure language VHDL file group: hdl/filter_axi_lite_interface_verilog.v,...
 INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
 INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip'.
-WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip_catalog'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results/ip_catalog'.)
 0
-Wrote  : <C:\Users\qhb21126\Documents\MATLAB\GIT\image_filtering_pynq\generate_results\ip_catalog\general_filter.srcs\sources_1\bd\general_filter_bd\general_filter_bd.bd> 
+Wrote  : <C:\Users\qhb21126\Desktop\image_filtering_pynq\generate_results\ip_catalog\filter.srcs\sources_1\bd\filter_bd\filter_bd.bd> 
 WARNING: [Boardtcl 53-1] No current board_part set.
 WARNING: [BD 41-1753] The name 'processing_system_1_axi_periph' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
 WARNING: [BD 41-1753] The name 'rst_processing_system_1_50M' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
-Slave segment '/general_filter_1/general_filter_s_axi/reg0' is being assigned into address space '/processing_system_1/Data' at <0x43C0_0000 [ 64K ]>.
+Slave segment '/filter_1/filter_s_axi/reg0' is being assigned into address space '/processing_system_1/Data' at <0x43C0_0000 [ 64K ]>.
 INFO: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
 Please check your design and connect them as needed: 
-/general_filter_1/s_axis_tvalid
+/filter_1/s_axis_tvalid
 
-Wrote  : <C:\Users\qhb21126\Documents\MATLAB\GIT\image_filtering_pynq\generate_results\ip_catalog\general_filter.srcs\sources_1\bd\general_filter_bd\general_filter_bd.bd> 
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 15:22:25 2024...
+Wrote  : <C:\Users\qhb21126\Desktop\image_filtering_pynq\generate_results\ip_catalog\filter.srcs\sources_1\bd\filter_bd\filter_bd.bd> 
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 18:14:21 2024...

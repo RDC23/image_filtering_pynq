@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.runs/impl_1'
+HD_PWD='C:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

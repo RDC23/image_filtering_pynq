@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.runs/synth_1/General_Filter_wrapper.tcl"
+  variable script "C:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.runs/synth_1/General_Filter_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -78,41 +77,59 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.cache/wt [current_project]
-set_property parent.project_path C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.cache/wt [current_project]
+set_property parent.project_path C:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/generate_results/ip [current_project]
+set_property ip_repo_paths c:/Users/qhb21126/Desktop/image_filtering_pynq/Sysgen_Results/ip [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.cache/ip [current_project]
+set_property ip_output_repo c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/hdl/General_Filter_wrapper.vhd
-add_files C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.srcs/sources_1/bd/General_Filter/General_Filter.bd
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_processing_system7_0_1/General_Filter_processing_system7_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_general_filter_0_1/general_filter_fifo_generator_i0/general_filter_fifo_generator_i0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_general_filter_0_1/general_filter_fifo_generator_i1/general_filter_fifo_generator_i1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_general_filter_0_1/constrs/general_filter.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_axi_dma_2/General_Filter_axi_dma_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_axi_dma_2/General_Filter_axi_dma_2_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_axi_dma_2/General_Filter_axi_dma_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_xbar_4/General_Filter_xbar_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_2/General_Filter_rst_ps7_0_100M_2_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_2/General_Filter_rst_ps7_0_100M_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_2/General_Filter_rst_ps7_0_100M_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_xbar_5/General_Filter_xbar_5_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_0/General_Filter_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_0/General_Filter_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_0/General_Filter_auto_us_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_1/General_Filter_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_1/General_Filter_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_1/General_Filter_auto_us_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_pc_0/General_Filter_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_pc_1/General_Filter_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/General_Filter_ooc.xdc]
+read_vhdl -library xil_defaultlib c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/hdl/General_Filter_wrapper.vhd
+add_files C:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.srcs/sources_1/bd/General_Filter/General_Filter.bd
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_processing_system7_0_2/General_Filter_processing_system7_0_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_general_filter_0_3/general_filter_fifo_generator_i0/general_filter_fifo_generator_i0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_general_filter_0_3/general_filter_fifo_generator_i1/general_filter_fifo_generator_i1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_general_filter_0_3/constrs/general_filter.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_axi_dma_3/General_Filter_axi_dma_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_axi_dma_3/General_Filter_axi_dma_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_axi_dma_3/General_Filter_axi_dma_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_xbar_6/General_Filter_xbar_6_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_df_0/General_Filter_auto_us_df_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_df_0/General_Filter_auto_us_df_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_df_0/General_Filter_auto_us_df_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_s01_data_fifo_0/General_Filter_s01_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_s01_data_fifo_0/General_Filter_s01_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_s01_data_fifo_0/General_Filter_s01_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_df_1/General_Filter_auto_us_df_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_df_1/General_Filter_auto_us_df_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_us_df_1/General_Filter_auto_us_df_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m00_data_fifo_4/General_Filter_m00_data_fifo_4_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m00_data_fifo_4/General_Filter_m00_data_fifo_4_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m00_data_fifo_4/General_Filter_m00_data_fifo_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_pc_2/General_Filter_auto_pc_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m01_data_fifo_4/General_Filter_m01_data_fifo_4_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m01_data_fifo_4/General_Filter_m01_data_fifo_4_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m01_data_fifo_4/General_Filter_m01_data_fifo_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_3/General_Filter_rst_ps7_0_100M_3_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_3/General_Filter_rst_ps7_0_100M_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_rst_ps7_0_100M_3/General_Filter_rst_ps7_0_100M_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_xbar_7/General_Filter_xbar_7_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_s00_data_fifo_5/General_Filter_s00_data_fifo_5_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_s00_data_fifo_5/General_Filter_s00_data_fifo_5_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_s00_data_fifo_5/General_Filter_s00_data_fifo_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_auto_pc_3/General_Filter_auto_pc_3_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m00_data_fifo_5/General_Filter_m00_data_fifo_5_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m00_data_fifo_5/General_Filter_m00_data_fifo_5_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m00_data_fifo_5/General_Filter_m00_data_fifo_5_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m01_data_fifo_5/General_Filter_m01_data_fifo_5_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m01_data_fifo_5/General_Filter_m01_data_fifo_5_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/ip/General_Filter_m01_data_fifo_5/General_Filter_m01_data_fifo_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.gen/sources_1/bd/General_Filter/General_Filter_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

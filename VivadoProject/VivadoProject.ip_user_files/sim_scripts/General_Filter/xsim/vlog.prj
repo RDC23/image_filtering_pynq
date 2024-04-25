@@ -1,18 +1,24 @@
-verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/ec67/hdl" --include "../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/34f8/hdl" --include "../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/f0f5/hdl" \
-"../../../bd/General_Filter/ip/General_Filter_processing_system7_0_1/sim/General_Filter_processing_system7_0_1.v" \
-"../../../bd/General_Filter/ip/General_Filter_general_filter_0_1/general_filter_fifo_generator_i0/sim/general_filter_fifo_generator_i0.v" \
-"../../../bd/General_Filter/ip/General_Filter_general_filter_0_1/general_filter_fifo_generator_i1/sim/general_filter_fifo_generator_i1.v" \
-"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/f0f5/hdl/general_filter_axi_lite_interface_verilog.v" \
-"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/f0f5/hdl/synth_reg.v" \
-"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/f0f5/hdl/synth_reg_w_init.v" \
-"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/f0f5/hdl/convert_type.v" \
-"../../../bd/General_Filter/ip/General_Filter_general_filter_0_1/sim/General_Filter_general_filter_0_1.v" \
-"../../../bd/General_Filter/ip/General_Filter_xbar_4/sim/General_Filter_xbar_4.v" \
-"../../../bd/General_Filter/ip/General_Filter_xbar_5/sim/General_Filter_xbar_5.v" \
-"../../../bd/General_Filter/ip/General_Filter_auto_us_0/sim/General_Filter_auto_us_0.v" \
-"../../../bd/General_Filter/ip/General_Filter_auto_us_1/sim/General_Filter_auto_us_1.v" \
-"../../../bd/General_Filter/ip/General_Filter_auto_pc_0/sim/General_Filter_auto_pc_0.v" \
-"../../../bd/General_Filter/ip/General_Filter_auto_pc_1/sim/General_Filter_auto_pc_1.v" \
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/ec67/hdl" --include "../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/34f8/hdl" --include "../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/e9a5/hdl" \
+"../../../bd/General_Filter/ip/General_Filter_processing_system7_0_2/sim/General_Filter_processing_system7_0_2.v" \
+"../../../bd/General_Filter/ip/General_Filter_general_filter_0_3/general_filter_fifo_generator_i0/sim/general_filter_fifo_generator_i0.v" \
+"../../../bd/General_Filter/ip/General_Filter_general_filter_0_3/general_filter_fifo_generator_i1/sim/general_filter_fifo_generator_i1.v" \
+"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/e9a5/hdl/general_filter_axi_lite_interface_verilog.v" \
+"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/e9a5/hdl/synth_reg.v" \
+"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/e9a5/hdl/synth_reg_w_init.v" \
+"../../../../VivadoProject.gen/sources_1/bd/General_Filter/ipshared/e9a5/hdl/convert_type.v" \
+"../../../bd/General_Filter/ip/General_Filter_general_filter_0_3/sim/General_Filter_general_filter_0_3.v" \
+"../../../bd/General_Filter/ip/General_Filter_xbar_6/sim/General_Filter_xbar_6.v" \
+"../../../bd/General_Filter/ip/General_Filter_auto_us_df_0/sim/General_Filter_auto_us_df_0.v" \
+"../../../bd/General_Filter/ip/General_Filter_s01_data_fifo_0/sim/General_Filter_s01_data_fifo_0.v" \
+"../../../bd/General_Filter/ip/General_Filter_auto_us_df_1/sim/General_Filter_auto_us_df_1.v" \
+"../../../bd/General_Filter/ip/General_Filter_m00_data_fifo_4/sim/General_Filter_m00_data_fifo_4.v" \
+"../../../bd/General_Filter/ip/General_Filter_auto_pc_2/sim/General_Filter_auto_pc_2.v" \
+"../../../bd/General_Filter/ip/General_Filter_m01_data_fifo_4/sim/General_Filter_m01_data_fifo_4.v" \
+"../../../bd/General_Filter/ip/General_Filter_xbar_7/sim/General_Filter_xbar_7.v" \
+"../../../bd/General_Filter/ip/General_Filter_s00_data_fifo_5/sim/General_Filter_s00_data_fifo_5.v" \
+"../../../bd/General_Filter/ip/General_Filter_auto_pc_3/sim/General_Filter_auto_pc_3.v" \
+"../../../bd/General_Filter/ip/General_Filter_m00_data_fifo_5/sim/General_Filter_m00_data_fifo_5.v" \
+"../../../bd/General_Filter/ip/General_Filter_m01_data_fifo_5/sim/General_Filter_m01_data_fifo_5.v" \
 
 verilog xil_defaultlib "glbl.v"
 

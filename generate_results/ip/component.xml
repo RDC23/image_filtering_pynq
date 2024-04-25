@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>strath.ac.uk</spirit:vendor>
   <spirit:library>SysGen</spirit:library>
-  <spirit:name>general_filter</spirit:name>
+  <spirit:name>filter</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -100,11 +100,11 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>general_filter_s_axi</spirit:name>
+      <spirit:name>filter_s_axi</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
       <spirit:slave>
-        <spirit:memoryMapRef spirit:memoryMapRef="general_filter_s_axi"/>
+        <spirit:memoryMapRef spirit:memoryMapRef="filter_s_axi"/>
       </spirit:slave>
       <spirit:portMaps>
         <spirit:portMap>
@@ -112,7 +112,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>AWADDR</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_awaddr</spirit:name>
+            <spirit:name>filter_s_axi_awaddr</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -120,7 +120,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>AWVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_awvalid</spirit:name>
+            <spirit:name>filter_s_axi_awvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -128,7 +128,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>AWREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_awready</spirit:name>
+            <spirit:name>filter_s_axi_awready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -136,7 +136,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WDATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_wdata</spirit:name>
+            <spirit:name>filter_s_axi_wdata</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -144,7 +144,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WSTRB</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_wstrb</spirit:name>
+            <spirit:name>filter_s_axi_wstrb</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -152,7 +152,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_wvalid</spirit:name>
+            <spirit:name>filter_s_axi_wvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -160,7 +160,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_wready</spirit:name>
+            <spirit:name>filter_s_axi_wready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -168,7 +168,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>BRESP</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_bresp</spirit:name>
+            <spirit:name>filter_s_axi_bresp</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -176,7 +176,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>BVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_bvalid</spirit:name>
+            <spirit:name>filter_s_axi_bvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -184,7 +184,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>BREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_bready</spirit:name>
+            <spirit:name>filter_s_axi_bready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -192,7 +192,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>ARADDR</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_araddr</spirit:name>
+            <spirit:name>filter_s_axi_araddr</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -200,7 +200,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>ARVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_arvalid</spirit:name>
+            <spirit:name>filter_s_axi_arvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -208,7 +208,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>ARREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_arready</spirit:name>
+            <spirit:name>filter_s_axi_arready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -216,7 +216,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RDATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_rdata</spirit:name>
+            <spirit:name>filter_s_axi_rdata</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -224,7 +224,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RRESP</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_rresp</spirit:name>
+            <spirit:name>filter_s_axi_rresp</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -232,7 +232,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_rvalid</spirit:name>
+            <spirit:name>filter_s_axi_rvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -240,7 +240,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_s_axi_rready</spirit:name>
+            <spirit:name>filter_s_axi_rready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -263,16 +263,16 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">general_filter_s_axi:m_axis:s_axis</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">filter_s_axi:m_axis:s_axis</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_RESET</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">general_filter_aresetn</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">filter_aresetn</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>general_filter_aresetn</spirit:name>
+      <spirit:name>filter_aresetn</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
       <spirit:slave/>
@@ -282,21 +282,21 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RST</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>general_filter_aresetn</spirit:name>
+            <spirit:name>filter_aresetn</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.GENERAL_FILTER_ARESETN.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.FILTER_ARESETN.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
   </spirit:busInterfaces>
   <spirit:memoryMaps>
     <spirit:memoryMap>
-      <spirit:name>general_filter_s_axi</spirit:name>
+      <spirit:name>filter_s_axi</spirit:name>
       <spirit:addressBlock>
         <spirit:name>reg0</spirit:name>
         <spirit:baseAddress spirit:format="bitString" spirit:resolve="user" spirit:bitStringLength="32">0</spirit:baseAddress>
@@ -306,11 +306,11 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>OFFSET_BASE_PARAM</spirit:name>
-            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.GENERAL_FILTER_S_AXI.REG0.OFFSET_BASE_PARAM">C_GENERAL_FILTER_S_AXI_BASEADDR</spirit:value>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.FILTER_S_AXI.REG0.OFFSET_BASE_PARAM">C_FILTER_S_AXI_BASEADDR</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
-            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.GENERAL_FILTER_S_AXI.REG0.OFFSET_HIGH_PARAM">C_GENERAL_FILTER_S_AXI_HIGHADDR</spirit:value>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.FILTER_S_AXI.REG0.OFFSET_HIGH_PARAM">C_FILTER_S_AXI_HIGHADDR</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:addressBlock>
@@ -323,7 +323,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>general_filter</spirit:modelName>
+        <spirit:modelName>filter</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -333,7 +333,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:displayName>VHDL Simulation</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>general_filter</spirit:modelName>
+        <spirit:modelName>filter</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -463,7 +463,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_aresetn</spirit:name>
+        <spirit:name>filter_aresetn</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -476,7 +476,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_awaddr</spirit:name>
+        <spirit:name>filter_s_axi_awaddr</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -496,7 +496,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_awvalid</spirit:name>
+        <spirit:name>filter_s_axi_awvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -512,7 +512,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_wdata</spirit:name>
+        <spirit:name>filter_s_axi_wdata</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -532,7 +532,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_wstrb</spirit:name>
+        <spirit:name>filter_s_axi_wstrb</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -552,7 +552,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_wvalid</spirit:name>
+        <spirit:name>filter_s_axi_wvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -568,7 +568,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_bready</spirit:name>
+        <spirit:name>filter_s_axi_bready</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -584,7 +584,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_araddr</spirit:name>
+        <spirit:name>filter_s_axi_araddr</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -604,7 +604,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_arvalid</spirit:name>
+        <spirit:name>filter_s_axi_arvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -620,7 +620,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_rready</spirit:name>
+        <spirit:name>filter_s_axi_rready</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -704,7 +704,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_awready</spirit:name>
+        <spirit:name>filter_s_axi_awready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -717,7 +717,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_wready</spirit:name>
+        <spirit:name>filter_s_axi_wready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -730,7 +730,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_bresp</spirit:name>
+        <spirit:name>filter_s_axi_bresp</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -747,7 +747,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_bvalid</spirit:name>
+        <spirit:name>filter_s_axi_bvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -760,7 +760,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_arready</spirit:name>
+        <spirit:name>filter_s_axi_arready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -773,7 +773,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_rdata</spirit:name>
+        <spirit:name>filter_s_axi_rdata</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -790,7 +790,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_rresp</spirit:name>
+        <spirit:name>filter_s_axi_rresp</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -807,7 +807,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>general_filter_s_axi_rvalid</spirit:name>
+        <spirit:name>filter_s_axi_rvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -832,83 +832,83 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i0/general_filter_c_addsub_v12_0_i0.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i0/filter_c_addsub_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i1/general_filter_c_addsub_v12_0_i1.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i1/filter_c_addsub_v12_0_i1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i2/general_filter_c_addsub_v12_0_i2.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i2/filter_c_addsub_v12_0_i2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i3/general_filter_c_addsub_v12_0_i3.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i3/filter_c_addsub_v12_0_i3.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i4/general_filter_c_addsub_v12_0_i4.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i4/filter_c_addsub_v12_0_i4.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i5/general_filter_c_addsub_v12_0_i5.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i5/filter_c_addsub_v12_0_i5.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i6/general_filter_c_addsub_v12_0_i6.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i6/filter_c_addsub_v12_0_i6.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i7/general_filter_c_addsub_v12_0_i7.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i7/filter_c_addsub_v12_0_i7.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i8/general_filter_c_addsub_v12_0_i8.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i8/filter_c_addsub_v12_0_i8.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i9/general_filter_c_addsub_v12_0_i9.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i9/filter_c_addsub_v12_0_i9.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_counter_binary_v12_0_i0/general_filter_c_counter_binary_v12_0_i0.xci</spirit:name>
+        <spirit:name>filter_c_counter_binary_v12_0_i0/filter_c_counter_binary_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_div_gen_v5_1_i0/general_filter_div_gen_v5_1_i0.xci</spirit:name>
+        <spirit:name>filter_div_gen_v5_1_i0/filter_div_gen_v5_1_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_fifo_generator_i0/general_filter_fifo_generator_i0.xci</spirit:name>
+        <spirit:name>filter_fifo_generator_i0/filter_fifo_generator_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_fifo_generator_i1/general_filter_fifo_generator_i1.xci</spirit:name>
+        <spirit:name>filter_fifo_generator_i1/filter_fifo_generator_i1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i0/general_filter_mult_gen_v12_0_i0.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i0/filter_mult_gen_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i1/general_filter_mult_gen_v12_0_i1.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i1/filter_mult_gen_v12_0_i1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i2/general_filter_mult_gen_v12_0_i2.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i2/filter_mult_gen_v12_0_i2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i3/general_filter_mult_gen_v12_0_i3.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i3/filter_mult_gen_v12_0_i3.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i4/general_filter_mult_gen_v12_0_i4.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i4/filter_mult_gen_v12_0_i4.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>constrs/general_filter.xdc</spirit:name>
+        <spirit:name>constrs/filter.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -952,17 +952,17 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/general_filter_entity_declarations.vhd</spirit:name>
+        <spirit:name>hdl/filter_entity_declarations.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/general_filter.vhd</spirit:name>
+        <spirit:name>hdl/filter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/general_filter_axi_lite_interface_verilog.v</spirit:name>
+        <spirit:name>hdl/filter_axi_lite_interface_verilog.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
@@ -992,79 +992,79 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i0/general_filter_c_addsub_v12_0_i0.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i0/filter_c_addsub_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i1/general_filter_c_addsub_v12_0_i1.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i1/filter_c_addsub_v12_0_i1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i2/general_filter_c_addsub_v12_0_i2.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i2/filter_c_addsub_v12_0_i2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i3/general_filter_c_addsub_v12_0_i3.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i3/filter_c_addsub_v12_0_i3.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i4/general_filter_c_addsub_v12_0_i4.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i4/filter_c_addsub_v12_0_i4.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i5/general_filter_c_addsub_v12_0_i5.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i5/filter_c_addsub_v12_0_i5.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i6/general_filter_c_addsub_v12_0_i6.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i6/filter_c_addsub_v12_0_i6.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i7/general_filter_c_addsub_v12_0_i7.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i7/filter_c_addsub_v12_0_i7.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i8/general_filter_c_addsub_v12_0_i8.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i8/filter_c_addsub_v12_0_i8.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_addsub_v12_0_i9/general_filter_c_addsub_v12_0_i9.xci</spirit:name>
+        <spirit:name>filter_c_addsub_v12_0_i9/filter_c_addsub_v12_0_i9.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_c_counter_binary_v12_0_i0/general_filter_c_counter_binary_v12_0_i0.xci</spirit:name>
+        <spirit:name>filter_c_counter_binary_v12_0_i0/filter_c_counter_binary_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_div_gen_v5_1_i0/general_filter_div_gen_v5_1_i0.xci</spirit:name>
+        <spirit:name>filter_div_gen_v5_1_i0/filter_div_gen_v5_1_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_fifo_generator_i0/general_filter_fifo_generator_i0.xci</spirit:name>
+        <spirit:name>filter_fifo_generator_i0/filter_fifo_generator_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_fifo_generator_i1/general_filter_fifo_generator_i1.xci</spirit:name>
+        <spirit:name>filter_fifo_generator_i1/filter_fifo_generator_i1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i0/general_filter_mult_gen_v12_0_i0.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i0/filter_mult_gen_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i1/general_filter_mult_gen_v12_0_i1.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i1/filter_mult_gen_v12_0_i1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i2/general_filter_mult_gen_v12_0_i2.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i2/filter_mult_gen_v12_0_i2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i3/general_filter_mult_gen_v12_0_i3.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i3/filter_mult_gen_v12_0_i3.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>general_filter_mult_gen_v12_0_i4/general_filter_mult_gen_v12_0_i4.xci</spirit:name>
+        <spirit:name>filter_mult_gen_v12_0_i4/filter_mult_gen_v12_0_i4.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -1116,19 +1116,19 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/general_filter_entity_declarations.vhd</spirit:name>
+        <spirit:name>hdl/filter_entity_declarations.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/general_filter.vhd</spirit:name>
+        <spirit:name>hdl/filter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/general_filter_axi_lite_interface_verilog.v</spirit:name>
+        <spirit:name>hdl/filter_axi_lite_interface_verilog.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -1162,53 +1162,53 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
     <spirit:fileSet>
       <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/src/general_filter_hw.h</spirit:name>
+        <spirit:name>drivers/filter_v1_0/src/filter_hw.h</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/src/general_filter.h</spirit:name>
+        <spirit:name>drivers/filter_v1_0/src/filter.h</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/src/general_filter_sinit.c</spirit:name>
+        <spirit:name>drivers/filter_v1_0/src/filter_sinit.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/src/general_filter.c</spirit:name>
+        <spirit:name>drivers/filter_v1_0/src/filter.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/src/general_filter_linux.c</spirit:name>
+        <spirit:name>drivers/filter_v1_0/src/filter_linux.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/data/general_filter.mdd</spirit:name>
+        <spirit:name>drivers/filter_v1_0/data/filter.mdd</spirit:name>
         <spirit:userFileType>driver_mdd</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/data/general_filter.tcl</spirit:name>
+        <spirit:name>drivers/filter_v1_0/data/filter.tcl</spirit:name>
         <spirit:userFileType>driver_tcl</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/src/Makefile</spirit:name>
+        <spirit:name>drivers/filter_v1_0/src/Makefile</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/general_filter_v1_0/doc/html/api/index.html</spirit:name>
+        <spirit:name>drivers/filter_v1_0/doc/html/api/index.html</spirit:name>
         <spirit:userFileType>html</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_product_guide_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>general_filter.htm</spirit:name>
+        <spirit:name>filter.htm</spirit:name>
         <spirit:userFileType>html</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/general_filter_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/filter_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -1227,7 +1227,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">general_filter_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">filter_v1_0</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -1238,15 +1238,15 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
       <xilinx:taxonomies>
         <xilinx:taxonomy>/System_Generator_for_DSP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>general_filter</xilinx:displayName>
+      <xilinx:displayName>filter</xilinx:displayName>
       <xilinx:definitionSource>sysgen</xilinx:definitionSource>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>344791280</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-04-23T14:21:59Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>344974408</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-04-25T17:13:54Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>

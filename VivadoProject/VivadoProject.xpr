@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/image_filtering_pynq/VivadoProject/VivadoProject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="de75762b68bc4b84bc74c7b76d985248"/>
@@ -36,7 +36,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../Sysgen_Results/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../generate_results/ip"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -54,13 +54,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="9"/>
-    <Option Name="WTModelSimExportSim" Val="9"/>
-    <Option Name="WTQuestaExportSim" Val="9"/>
-    <Option Name="WTIesExportSim" Val="9"/>
-    <Option Name="WTVcsExportSim" Val="9"/>
-    <Option Name="WTRivieraExportSim" Val="9"/>
-    <Option Name="WTActivehdlExportSim" Val="9"/>
+    <Option Name="WTXSimExportSim" Val="11"/>
+    <Option Name="WTModelSimExportSim" Val="11"/>
+    <Option Name="WTQuestaExportSim" Val="11"/>
+    <Option Name="WTIesExportSim" Val="11"/>
+    <Option Name="WTVcsExportSim" Val="11"/>
+    <Option Name="WTRivieraExportSim" Val="11"/>
+    <Option Name="WTActivehdlExportSim" Val="11"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -76,50 +76,26 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/bd/General_Filter/General_Filter.bd">
+      <File Path="$PSRCDIR/sources_1/bd/Filter/Filter.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_xbar_6/General_Filter_xbar_6.xci">
-          <Proxy FileSetName="General_Filter_xbar_6"/>
+        <CompFileExtendedInfo CompFileName="Filter.bd" FileRelPathName="ip/Filter_axi_dma_0/Filter_axi_dma_0.xci">
+          <Proxy FileSetName="Filter_axi_dma_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_general_filter_0_3/General_Filter_general_filter_0_3.xci">
-          <Proxy FileSetName="General_Filter_general_filter_0_3"/>
+        <CompFileExtendedInfo CompFileName="Filter.bd" FileRelPathName="ip/Filter_processing_system7_0_0/Filter_processing_system7_0_0.xci">
+          <Proxy FileSetName="Filter_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_auto_us_df_0/General_Filter_auto_us_df_0.xci">
-          <Proxy FileSetName="General_Filter_auto_us_df_0"/>
+        <CompFileExtendedInfo CompFileName="Filter.bd" FileRelPathName="ip/Filter_xbar_0/Filter_xbar_0.xci">
+          <Proxy FileSetName="Filter_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_s01_data_fifo_0/General_Filter_s01_data_fifo_0.xci">
-          <Proxy FileSetName="General_Filter_s01_data_fifo_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_axi_dma_3/General_Filter_axi_dma_3.xci">
-          <Proxy FileSetName="General_Filter_axi_dma_3"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_xbar_7/General_Filter_xbar_7.xci">
-          <Proxy FileSetName="General_Filter_xbar_7"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_m01_data_fifo_5/General_Filter_m01_data_fifo_5.xci">
-          <Proxy FileSetName="General_Filter_m01_data_fifo_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_m01_data_fifo_4/General_Filter_m01_data_fifo_4.xci">
-          <Proxy FileSetName="General_Filter_m01_data_fifo_4"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_m00_data_fifo_4/General_Filter_m00_data_fifo_4.xci">
-          <Proxy FileSetName="General_Filter_m00_data_fifo_4"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_s00_data_fifo_5/General_Filter_s00_data_fifo_5.xci">
-          <Proxy FileSetName="General_Filter_s00_data_fifo_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_m00_data_fifo_5/General_Filter_m00_data_fifo_5.xci">
-          <Proxy FileSetName="General_Filter_m00_data_fifo_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="General_Filter.bd" FileRelPathName="ip/General_Filter_auto_us_df_1/General_Filter_auto_us_df_1.xci">
-          <Proxy FileSetName="General_Filter_auto_us_df_1"/>
+        <CompFileExtendedInfo CompFileName="Filter.bd" FileRelPathName="ip/Filter_filter_0_0/Filter_filter_0_0.xci">
+          <Proxy FileSetName="Filter_filter_0_0"/>
         </CompFileExtendedInfo>
       </File>
-      <File Path="$PGENDIR/sources_1/bd/General_Filter/hdl/General_Filter_wrapper.vhd">
+      <File Path="$PGENDIR/sources_1/bd/Filter/hdl/Filter_wrapper.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -127,7 +103,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="General_Filter_wrapper"/>
+        <Option Name="TopModule" Val="Filter_wrapper"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -141,7 +117,7 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="General_Filter_wrapper"/>
+        <Option Name="TopModule" Val="Filter_wrapper"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -160,75 +136,27 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="General_Filter_general_filter_0_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_general_filter_0_3" RelGenDir="$PGENDIR/General_Filter_general_filter_0_3">
+    <FileSet Name="Filter_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Filter_processing_system7_0_0" RelGenDir="$PGENDIR/Filter_processing_system7_0_0">
       <Config>
-        <Option Name="TopModule" Val="General_Filter_general_filter_0_3"/>
+        <Option Name="TopModule" Val="Filter_processing_system7_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="General_Filter_axi_dma_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_axi_dma_3" RelGenDir="$PGENDIR/General_Filter_axi_dma_3">
+    <FileSet Name="Filter_axi_dma_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Filter_axi_dma_0" RelGenDir="$PGENDIR/Filter_axi_dma_0">
       <Config>
-        <Option Name="TopModule" Val="General_Filter_axi_dma_3"/>
+        <Option Name="TopModule" Val="Filter_axi_dma_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="General_Filter_xbar_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_xbar_6" RelGenDir="$PGENDIR/General_Filter_xbar_6">
+    <FileSet Name="Filter_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Filter_xbar_0" RelGenDir="$PGENDIR/Filter_xbar_0">
       <Config>
-        <Option Name="TopModule" Val="General_Filter_xbar_6"/>
+        <Option Name="TopModule" Val="Filter_xbar_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="General_Filter_auto_us_df_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_auto_us_df_0" RelGenDir="$PGENDIR/General_Filter_auto_us_df_0">
+    <FileSet Name="Filter_filter_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Filter_filter_0_0" RelGenDir="$PGENDIR/Filter_filter_0_0">
       <Config>
-        <Option Name="TopModule" Val="General_Filter_auto_us_df_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_s01_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_s01_data_fifo_0" RelGenDir="$PGENDIR/General_Filter_s01_data_fifo_0">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_s01_data_fifo_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_auto_us_df_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_auto_us_df_1" RelGenDir="$PGENDIR/General_Filter_auto_us_df_1">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_auto_us_df_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_m00_data_fifo_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_m00_data_fifo_4" RelGenDir="$PGENDIR/General_Filter_m00_data_fifo_4">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_m00_data_fifo_4"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_m01_data_fifo_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_m01_data_fifo_4" RelGenDir="$PGENDIR/General_Filter_m01_data_fifo_4">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_m01_data_fifo_4"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_xbar_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_xbar_7" RelGenDir="$PGENDIR/General_Filter_xbar_7">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_xbar_7"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_s00_data_fifo_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_s00_data_fifo_5" RelGenDir="$PGENDIR/General_Filter_s00_data_fifo_5">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_s00_data_fifo_5"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_m00_data_fifo_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_m00_data_fifo_5" RelGenDir="$PGENDIR/General_Filter_m00_data_fifo_5">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_m00_data_fifo_5"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="General_Filter_m01_data_fifo_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/General_Filter_m01_data_fifo_5" RelGenDir="$PGENDIR/General_Filter_m01_data_fifo_5">
-      <Config>
-        <Option Name="TopModule" Val="General_Filter_m01_data_fifo_5"/>
+        <Option Name="TopModule" Val="Filter_filter_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -252,7 +180,7 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.srcs/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../VivadoProject/VivadoProject.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -264,7 +192,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_general_filter_0_3_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_general_filter_0_3" Part="xc7z020clg400-1" ConstrsSet="General_Filter_general_filter_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_general_filter_0_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_general_filter_0_3_synth_1">
+    <Run Id="Filter_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="Filter_processing_system7_0_0" Part="xc7z020clg400-1" ConstrsSet="Filter_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Filter_processing_system7_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_processing_system7_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -276,7 +204,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_axi_dma_3_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_axi_dma_3" Part="xc7z020clg400-1" ConstrsSet="General_Filter_axi_dma_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_axi_dma_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_axi_dma_3_synth_1">
+    <Run Id="Filter_axi_dma_0_synth_1" Type="Ft3:Synth" SrcSet="Filter_axi_dma_0" Part="xc7z020clg400-1" ConstrsSet="Filter_axi_dma_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Filter_axi_dma_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_axi_dma_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -288,7 +216,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_xbar_6_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_xbar_6" Part="xc7z020clg400-1" ConstrsSet="General_Filter_xbar_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_xbar_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_xbar_6_synth_1">
+    <Run Id="Filter_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="Filter_xbar_0" Part="xc7z020clg400-1" ConstrsSet="Filter_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Filter_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_xbar_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -300,7 +228,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_auto_us_df_0_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_auto_us_df_0" Part="xc7z020clg400-1" ConstrsSet="General_Filter_auto_us_df_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_auto_us_df_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_auto_us_df_0_synth_1">
+    <Run Id="Filter_filter_0_0_synth_1" Type="Ft3:Synth" SrcSet="Filter_filter_0_0" Part="xc7z020clg400-1" ConstrsSet="Filter_filter_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Filter_filter_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_filter_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -312,103 +240,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_s01_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_s01_data_fifo_0" Part="xc7z020clg400-1" ConstrsSet="General_Filter_s01_data_fifo_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_s01_data_fifo_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_s01_data_fifo_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_auto_us_df_1_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_auto_us_df_1" Part="xc7z020clg400-1" ConstrsSet="General_Filter_auto_us_df_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_auto_us_df_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_auto_us_df_1_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m00_data_fifo_4_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_m00_data_fifo_4" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m00_data_fifo_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_m00_data_fifo_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m00_data_fifo_4_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m01_data_fifo_4_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_m01_data_fifo_4" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m01_data_fifo_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_m01_data_fifo_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m01_data_fifo_4_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_xbar_7_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_xbar_7" Part="xc7z020clg400-1" ConstrsSet="General_Filter_xbar_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_xbar_7_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_xbar_7_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_s00_data_fifo_5_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_s00_data_fifo_5" Part="xc7z020clg400-1" ConstrsSet="General_Filter_s00_data_fifo_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_s00_data_fifo_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_s00_data_fifo_5_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m00_data_fifo_5_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_m00_data_fifo_5" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m00_data_fifo_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_m00_data_fifo_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m00_data_fifo_5_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m01_data_fifo_5_synth_1" Type="Ft3:Synth" SrcSet="General_Filter_m01_data_fifo_5" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m01_data_fifo_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/General_Filter_m01_data_fifo_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m01_data_fifo_5_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.srcs/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../VivadoProject/VivadoProject.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -428,7 +260,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1_copy_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../Documents/MATLAB/GIT/image_filtering_pynq/VivadoProject/VivadoProject.srcs/utils_1/imports/impl_1">
+    <Run Id="impl_1_copy_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../VivadoProject/VivadoProject.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -501,7 +333,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_general_filter_0_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_general_filter_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_general_filter_0_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_general_filter_0_3_impl_1">
+    <Run Id="Filter_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Filter_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Filter_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_processing_system7_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -520,7 +352,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_axi_dma_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_axi_dma_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_axi_dma_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_axi_dma_3_impl_1">
+    <Run Id="Filter_axi_dma_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Filter_axi_dma_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Filter_axi_dma_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_axi_dma_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -539,7 +371,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_xbar_6_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_xbar_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_xbar_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_xbar_6_impl_1">
+    <Run Id="Filter_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Filter_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Filter_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_xbar_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -558,159 +390,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="General_Filter_auto_us_df_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_auto_us_df_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_auto_us_df_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_auto_us_df_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_s01_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_s01_data_fifo_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_s01_data_fifo_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_s01_data_fifo_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_auto_us_df_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_auto_us_df_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_auto_us_df_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_auto_us_df_1_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m00_data_fifo_4_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m00_data_fifo_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_m00_data_fifo_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m00_data_fifo_4_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m01_data_fifo_4_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m01_data_fifo_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_m01_data_fifo_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m01_data_fifo_4_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_xbar_7_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_xbar_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_xbar_7_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_xbar_7_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_s00_data_fifo_5_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_s00_data_fifo_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_s00_data_fifo_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_s00_data_fifo_5_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m00_data_fifo_5_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m00_data_fifo_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_m00_data_fifo_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m00_data_fifo_5_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="General_Filter_m01_data_fifo_5_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="General_Filter_m01_data_fifo_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="General_Filter_m01_data_fifo_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/General_Filter_m01_data_fifo_5_impl_1">
+    <Run Id="Filter_filter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Filter_filter_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Filter_filter_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Filter_filter_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

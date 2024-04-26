@@ -24,7 +24,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {axi_stream_template}
-	set IP_Revision {344974408}
+	set IP_Revision {345035685}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {strath.ac.uk}
@@ -67,9 +67,9 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set SimulationTime {20852690.00000000 ns}
 	set SynthStrategyName {Vivado Synthesis Defaults}
 	set SynthesisTool {Vivado}
-	set TargetDir {C:/Users/qhb21126/Desktop/image_filtering_pynq/generate_results}
+	set TargetDir {C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/image_filtering_pynq/generate_results}
 	set TopLevelModule {filter}
-	set TopLevelSimulinkHandle 0.000244141
+	set TopLevelSimulinkHandle 0.00012207
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface s_axis_tvalid Name {s_axis_tvalid}

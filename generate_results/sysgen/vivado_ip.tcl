@@ -513,10 +513,10 @@ lappend params_list CONFIG.Component_Name {filter_mult_gen_v12_0_i3}
 lappend params_list CONFIG.clockenable {false}
 lappend params_list CONFIG.multiplier_construction {Use_Mults}
 lappend params_list CONFIG.optgoal {Speed}
-lappend params_list CONFIG.outputwidthhigh {15}
+lappend params_list CONFIG.outputwidthhigh {39}
 lappend params_list CONFIG.pipestages {0}
-lappend params_list CONFIG.portatype {Unsigned}
-lappend params_list CONFIG.portawidth {8}
+lappend params_list CONFIG.portatype {Signed}
+lappend params_list CONFIG.portawidth {32}
 lappend params_list CONFIG.portbtype {Unsigned}
 lappend params_list CONFIG.portbwidth {8}
 lappend params_list CONFIG.sclrcepriority {CE_Overrides_SCLR}

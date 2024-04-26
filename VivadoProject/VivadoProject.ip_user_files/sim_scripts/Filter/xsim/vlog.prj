@@ -1,0 +1,29 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../VivadoProject.gen/sources_1/bd/Filter/ipshared/ec67/hdl" --include "../../../../VivadoProject.gen/sources_1/bd/Filter/ipshared/34f8/hdl" --include "../../../../VivadoProject.gen/sources_1/bd/Filter/ipshared/9756/hdl" \
+"../../../bd/Filter/ip/Filter_processing_system7_0_0/sim/Filter_processing_system7_0_0.v" \
+"../../../bd/Filter/ip/Filter_filter_0_0/filter_fifo_generator_i0/sim/filter_fifo_generator_i0.v" \
+"../../../bd/Filter/ip/Filter_filter_0_0/filter_fifo_generator_i1/sim/filter_fifo_generator_i1.v" \
+"../../../../VivadoProject.gen/sources_1/bd/Filter/ipshared/9756/hdl/filter_axi_lite_interface_verilog.v" \
+"../../../../VivadoProject.gen/sources_1/bd/Filter/ipshared/9756/hdl/synth_reg.v" \
+"../../../../VivadoProject.gen/sources_1/bd/Filter/ipshared/9756/hdl/synth_reg_w_init.v" \
+"../../../../VivadoProject.gen/sources_1/bd/Filter/ipshared/9756/hdl/convert_type.v" \
+"../../../bd/Filter/ip/Filter_filter_0_0/sim/Filter_filter_0_0.v" \
+"../../../bd/Filter/ip/Filter_xbar_0/sim/Filter_xbar_0.v" \
+"../../../bd/Filter/ip/Filter_xbar_1/sim/Filter_xbar_1.v" \
+"../../../bd/Filter/ip/Filter_s00_regslice_3/sim/Filter_s00_regslice_3.v" \
+"../../../bd/Filter/ip/Filter_auto_us_df_0/sim/Filter_auto_us_df_0.v" \
+"../../../bd/Filter/ip/Filter_s01_regslice_0/sim/Filter_s01_regslice_0.v" \
+"../../../bd/Filter/ip/Filter_s01_data_fifo_0/sim/Filter_s01_data_fifo_0.v" \
+"../../../bd/Filter/ip/Filter_m00_data_fifo_3/sim/Filter_m00_data_fifo_3.v" \
+"../../../bd/Filter/ip/Filter_m00_regslice_3/sim/Filter_m00_regslice_3.v" \
+"../../../bd/Filter/ip/Filter_auto_pc_0/sim/Filter_auto_pc_0.v" \
+"../../../bd/Filter/ip/Filter_s00_regslice_4/sim/Filter_s00_regslice_4.v" \
+"../../../bd/Filter/ip/Filter_s00_data_fifo_4/sim/Filter_s00_data_fifo_4.v" \
+"../../../bd/Filter/ip/Filter_auto_pc_1/sim/Filter_auto_pc_1.v" \
+"../../../bd/Filter/ip/Filter_m00_data_fifo_4/sim/Filter_m00_data_fifo_4.v" \
+"../../../bd/Filter/ip/Filter_m00_regslice_4/sim/Filter_m00_regslice_4.v" \
+"../../../bd/Filter/ip/Filter_m01_data_fifo_0/sim/Filter_m01_data_fifo_0.v" \
+"../../../bd/Filter/ip/Filter_m01_regslice_0/sim/Filter_m01_regslice_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

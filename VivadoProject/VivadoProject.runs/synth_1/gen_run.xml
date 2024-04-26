@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1714063246">
-  <File Type="PA-TCL" Name="General_Filter_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="General_Filter_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="General_Filter_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="General_Filter_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="General_Filter_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="General_Filter_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="General_Filter_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="General_Filter_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="General_Filter_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1714126811">
+  <File Type="PA-TCL" Name="Filter_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Filter_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Filter_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Filter_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="Filter_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Filter_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Filter_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Filter_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Filter_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/bd/General_Filter/General_Filter.bd">
+    <File Path="$PSRCDIR/sources_1/bd/Filter/Filter.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PGENDIR/sources_1/bd/General_Filter/hdl/General_Filter_wrapper.vhd">
+    <File Path="$PGENDIR/sources_1/bd/Filter/hdl/Filter_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -26,7 +26,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="General_Filter_wrapper"/>
+      <Option Name="TopModule" Val="Filter_wrapper"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -48,16 +48,8 @@
     </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_m00_data_fifo_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_auto_us_df_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_general_filter_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_s01_data_fifo_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_axi_dma_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_xbar_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_m00_data_fifo_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_m01_data_fifo_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_auto_us_df_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_xbar_7"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_s00_data_fifo_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="General_Filter_m01_data_fifo_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="Filter_axi_dma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Filter_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Filter_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Filter_filter_0_0"/>
 </GenRun>

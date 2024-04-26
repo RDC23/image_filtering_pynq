@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/qhb21126/Desktop/image_filtering_pynq/VivadoProject/VivadoProject.runs/synth_1'
+HD_PWD='C:/Users/qhb21126/Documents/MATLAB/GIT/image_filtering_pynq/image_filtering_pynq/VivadoProject/VivadoProject.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log General_Filter_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source General_Filter_wrapper.tcl
+EAStep vivado -log Filter_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Filter_wrapper.tcl

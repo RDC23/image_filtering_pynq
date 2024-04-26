@@ -6,7 +6,7 @@
 
 This is a repository which details how the Xilinx PYNQ SoC can be used to accelerate hardware filtering.
 
-The Jupyter notebook provides an interactive comparison between a purely software-driven filtering approach using the OpenCV library and our custom IP which hardware accelerates the convolution operation. The System Generator model was adapted from a generic "AXI4-Streaming Template" designed and open-sourced by David Northcote (StrathSDR). The primary modification was in the "Algorithm" subsystem, where the group designed our own 2D convolution implementation.
+The Jupyter notebook provides an interactive comparison between a purely software-driven filtering approach using the OpenCV library and our custom IP which hardware accelerates the convolution operation. The System Generator model was adapted from a generic "AXI4-Streaming Template" designed and open-sourced by David Northcote (StrathSDR), available at <https://github.com/strath-sdr/pynq_sobel>. The primary modification was in the "Algorithm" subsystem, where the group designed our own 2D convolution implementation.
 
 The "PYNQ" folder contains all the files required to get the design up and running easily. Simply copy the contents to a folder to the root of the PYNQ-Z2 board's SD card. Within this folder there are 4 key files:
 
